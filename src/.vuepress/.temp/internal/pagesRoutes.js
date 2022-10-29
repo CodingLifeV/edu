@@ -9,8 +9,8 @@ export const pagesRoutes = [
   ["v-efed1908","/edu/front/front-01.html",{"t":"快速入门","i":"config"},["/edu/front/front-01","/edu/front/front-01.md"]],
   ["v-ec8367ca","/edu/front/front-02.html",{"t":"快速入门","i":"config"},["/edu/front/front-02","/edu/front/front-02.md"]],
   ["v-e919b68c","/edu/front/front-03.html",{"t":""},["/edu/front/front-03","/edu/front/front-03.md"]],
-  ["v-aa84e9fa","/edu/util/utils.html",{"t":""},["/edu/util/utils","/edu/util/utils.md"]],
   ["v-00d17fc6","/edu/springcloud/springcloud-1.html",{"t":""},["/edu/springcloud/springcloud-1","/edu/springcloud/springcloud-1.md"]],
   ["v-02865865","/edu/springcloud/springcloud-2.html",{"t":""},["/edu/springcloud/springcloud-2","/edu/springcloud/springcloud-2.md"]],
+  ["v-aa84e9fa","/edu/util/utils.html",{"t":""},["/edu/util/utils","/edu/util/utils.md"]],
   ["v-3706649a","/404.html",{"t":""},["/404"]],
 ]

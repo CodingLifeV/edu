@@ -7,14 +7,10 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
+      title: "编码人生",
+      description: "以 Java 项目为主线, 记录学习过程中的知识点",
     },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
-    },
+    
   },
 
   theme,

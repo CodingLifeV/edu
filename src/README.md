@@ -1,110 +1,77 @@
 ---
 home: true
 icon: home
-title: Project home
+title: 项目主页
 heroImage: /logo.svg
-heroText: Project name
-tagline: You can place the description of the project here.
+heroText: 编码人生—CodingLife
+tagline: 以 Java 项目为主线, 记录学习过程中的知识点
 actions:
-  - text: How to Use 💡
-    link: /demo/
+  - text: 使用指南 💡
+    link: /base/
     type: primary
 
-  - text: Docs
-    link: /guide/
+  - text: 文档
+    link: /base/
 
 features:
-  - title: Markdown Enhance
-    icon: markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in markdown
-    link: https://vuepress-theme-hope.github.io/v2/guide/markdown/
-
-  - title: Slide page
+  - title: edu项目源码
     icon: slides
-    details: Adding slide pages to display things you like
-    link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides.html
+    details: 在线教育网后端代码，基于SpringBoot、SpringClound
+    link: https://github.com/CodingLifeVV/edu
 
-  - title: Layout enhancement
+  - title: edu-admin项目源码
+    icon: slides
+    details: 在线教育网后端前端源码，基于vue开发，使用vue-admin-template模版
+    link: https://github.com/CodingLifeVV/edu-admin
+
+  - title: edu-front项目源码
+    icon: slides
+    details: 在线教育网后端前端
+    link: https://github.com/CodingLifeVV/edu-front
+
+  - title: tiny-demo项目源码
     icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-    link: https://vuepress-theme-hope.github.io/v2/guide/layout/
-
-  - title: Pageviews and comments
-    icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/comment.html
-
-  - title: Article information
-    icon: info
-    details: Add author, writing date, reading time, word count and other information to your article
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/page-info.html
-
-  - title: Blog support
-    icon: blog
-    details: Listing your articles with their dates, tags and categories with some awesome layouts
-    link: https://vuepress-theme-hope.github.io/v2/guide/blog/
-
-  - title: Custom theme color
-    icon: palette
-    details: Supports custom theme colors and allows users to switch between preset theme colors
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/theme-color.html
-
-  - title: Dark Mode
-    icon: contrast
-    details: Switch between light and dark modes freely
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/darkmode.html
-
-  - title: Full A11y support
-    icon: support
-    details: Full support of accessibility in your site
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/accessibility.html
-
-  - title: Article Encryption
-    icon: lock
-    details: Encrypt you articles based on page links, so that only the one you want could see them
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/encrypt.html
-
-  - title: Copy button
-    icon: copy
-    details: Copy codes with one click in code blocks
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/copy-code.html
-
-  - title: Image preview
-    icon: pic
-    details: Support viewing, zooming, sharing your page images like a gallery
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/photo-swipe.html
-
-  - title: SEO enhancement
-    icon: config
-    details: Optimize pages for search engines
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/seo.html
-
-  - title: Sitemap
-    icon: sitemap
-    details: Generate a Sitemap for your site
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/sitemap.html
-
-  - title: Feed support
-    icon: rss
-    details: Generate feed to allow users to subscribe it
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/feed.html
-
-  - title: PWA support
-    icon: mobile
-    details: Make your site more like an APP
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/pwa.html
-
-  - title: More new features
-    icon: more
-    details: Including icon support, fullscreen button, etc.
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/
+    details: 文档中的一些小demo都在这里
+    link: https://github.com/CodingLifeVV/tiny-demo
 
 copyright: false
-footer: MIT Licensed | Copyright © 2019-present Mr.Hope
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> 
 ---
 
-This is an example of a project homepage. You can place your main content here.
+# 在线教育网学习教程
+## 项目简介
 
-To use this layout, you need to set `home: true` in the page front matter.
+在线教育网源自[谷粒学苑](https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&vd_source=abf2b3c27024a82e5c3803d588ff8453)，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。
 
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://vuepress-theme-hope.github.io/v2/guide/layout/home/).
+### 后端技术及工具
+
+| 技术          | 版本          | 说明                                   |
+| ------------- | ------------- | -------------------------------------- |
+| SpringBoot    | 2.6.4         | Java 后端系统开发框架                  |
+| MyBatis-Plus  | 3.5.1         | Mybatis 增强工具                       |
+| Druid         | 1.2.8         | 阿里巴巴数据库连接池                   |
+| Swagger       | 3.0.0         | 文档生成工具                           |
+| slf4j+log4j2  | 1.7.32+2.17.1 | 日志实现                               |
+| SpringCloud   | 2021.0.1      | 微服务解决方案                         |
+| Redis         |   2.6.4       |  分布式缓存  |
+| Nginx         |          |  静态资源服务器  |
+| OSS           |          |  阿里云对象存储服务  |
+| Lombok        |          |  简化对象封装工具  |
+| Gateway       |     |  服务网关  |
+
+### 前端技术及工具
+
+| 技术                 | 说明                                                         |
+| ------------------  | ----------------------------------------------------------- |
+|   Vue                   |     [前端框架]( 	https://vuejs.org/)      | 
+|   Element              |     [前端UI框架](https://element.eleme.io)    |                   
+| vue-admin-template  | 基于 [vue-element-admin](https://panjiachen.github.io/vue-element-admin-site/zh/)，后台的前端管理系统基础模板，用于二次开发 |                                  
+| Nuxt                |           [服务端渲染应用框架](https://www.nuxtjs.cn/guide)              |  
+|   Axios                |     前端HTTP框架          |                                               
+
+## 项目地址
+- 后台后端项目：<a href="https://github.com/CodingLifeVV/edu" target="_blank">https://github.com/CodingLifeVV/edu</a>
+- 后台前端项目：<a href="https://github.com/CodingLifeVV/edu-admin" target="_blank">https://github.com/CodingLifeVV/edu-admin</a>
+- 前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank">https://github.com/CodingLifeVV/edu-front</a>
+
+## 交流学习

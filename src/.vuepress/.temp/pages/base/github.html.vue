@@ -12,7 +12,7 @@
 <ol>
 <li>
 <p>在任何页面的右上角，点击 <strong>＋</strong> 号创建 （<strong>New repository</strong>）一个新的仓库</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202041154813.png" alt="image-20220204115437711" width="300" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202041154813.png" alt="image-20220204115437711" width="300" />
 </li>
 <li>
 <p>输入仓库的名字 <strong>Reposity name</strong>（必填项）输入一段简短的描述 <strong>Description</strong></p>
@@ -25,13 +25,13 @@
 </li>
 <li>
 <p>创建仓库 <strong>Create Reposity</strong></p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202082149955.png" alt="image-20220208214926860" width="700" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202082149955.png" alt="image-20220208214926860" width="700" />
 </li>
 </ol>
 <p>创建好一个仓库之后，便可以使用该仓库存储代码</p>
 <h3 id="在代码库下创建分支" tabindex="-1"><a class="header-anchor" href="#在代码库下创建分支" aria-hidden="true">#</a> 在代码库下创建分支</h3>
 <p>Github仓库使用概念“分支” <strong>branch</strong> 来管理我们的代码，默认创建的仓库存在一个命名为 <strong>main</strong> 的主分支，该分支通常用来存储最终的版本代码。我们可以创建其它的分支（相当于拥有主分支代码的一份拷贝），在该分支上对代码进行编辑修改，且<strong>不同分支上修改代码互不影响</strong>。如果此时有多个人协作完成一个项目，那么每个人可以创建自己独立的分支修改代码。最终将完成的代码合并到主分支上。下图显示了在分支上进行的一系列操作：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202041314837.png" alt="image-20220204131422734" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202041314837.png" alt="image-20220204131422734" loading="lazy"></p>
 <ul>
 <li>箭头方向代表主分支 <strong>main</strong></li>
 <li>创建了一个名为 <strong>feature</strong> 的分支</li>
@@ -47,7 +47,7 @@
 </li>
 <li>
 <p>点击 <strong>Create branch</strong>:dev from 'main'，创建并进入了新的分支 <code v-pre>dev</code></p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202082147957.png" alt="image-20220208214702854" width="300" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202082147957.png" alt="image-20220208214702854" width="300" />
 </li>
 </ol>
 <h3 id="在分支上编写代码并提交请求" tabindex="-1"><a class="header-anchor" href="#在分支上编写代码并提交请求" aria-hidden="true">#</a> 在分支上编写代码并提交请求</h3>
@@ -56,15 +56,15 @@
 <ol>
 <li>
 <p>在 <code v-pre>dev</code> 分支下点击<code v-pre>README.md</code>文件右上角的编辑选项（铅笔图标）</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202041959174.png" alt="image-20220204195904037" width="800" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202041959174.png" alt="image-20220204195904037" width="800" />
 </li>
 <li>
 <p>在编辑界面编辑修改之前的 <code v-pre>README.md</code> 文件</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202042007671.png" alt="image-20220204200739593" width="600" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202042007671.png" alt="image-20220204200739593" width="600" />
 </li>
 <li>
 <p>在 <code v-pre>Commit changes</code> 编写提交信息并提交更改
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202042009556.png" alt="image-20220204200927462" width="600" /></p>
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202042009556.png" alt="image-20220204200927462" width="600" /></p>
 </li>
 </ol>
 <div class="custom-container tip">
@@ -92,7 +92,7 @@
 </li>
 <li>
 <p>再次点击当前页面下的 <strong>Create pull request</strong></p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202051131599.gif" width="750" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202051131599.gif" width="750" />
 </li>
 </ol>
 <div class="custom-container tip">
@@ -111,11 +111,11 @@
 </li>
 <li>
 <p>如果没有问题，在与 Files changed 同级选项 <strong>Conversation</strong> 下点击 <strong>Merge pull request</strong> 合并请求</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202051200766.png" alt="image-20220205120010687" style="zoom:80%;" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202051200766.png" alt="image-20220205120010687" style="zoom:80%;" />
 </li>
 <li>
 <p>合并请求之后，此时主分支 main 的内容和 dev 分支一样了，如果项目已经完成，此时可以选择删除 dev 分支</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202051358726.png" width="800" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202051358726.png" width="800" />
 </li>
 </ol>
 <p>至此，我们已经学会了在 Github 上创建一个项目存储库，并在存储库上进行一系列操作。然而，我们往往需要做的是：</p>
@@ -129,15 +129,15 @@
 <ol>
 <li>
 <p>在 Github 搜索框中输入 <code v-pre>stars:&gt;5000</code>，表示检索标星大于 5000 的项目</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071654862.png" alt="image-20220207165439784" width="800" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071654862.png" alt="image-20220207165439784" width="800" />
 <p>检索界面展示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071754341.png" alt="image-20220207175419969" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071754341.png" alt="image-20220207175419969" loading="lazy"></p>
 </li>
 <li>
 <p>当然，你也可以类似在百度检索信息一样，在 Github 搜索框中输入具体想要寻找的项目的名称。当你发现一个优秀的开源项目之后，进入该项目所在仓库，比如你进入上图 <strong>Snailclimb/JavaGuide</strong> 仓库，便可以学习其他人的项目</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071803846.png" alt="image-20220207180327702" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071803846.png" alt="image-20220207180327702" loading="lazy"></p>
 <p><code v-pre>fork</code> 他人的项目会在你自己的 Github 中创建一个同名的仓库，并克隆一份项目的副本：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071810752.png" alt="image-20220207181002663" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071810752.png" alt="image-20220207181002663" loading="lazy"></p>
 <p>如果你发现克隆的项目有错误内容，你可以在自己的仓库下对该项目进行修改，修改之后可以发起一个 <code v-pre>Pull requests</code></p>
 </li>
 </ol>

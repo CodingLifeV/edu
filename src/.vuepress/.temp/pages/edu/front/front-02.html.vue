@@ -1,6 +1,6 @@
 <template><div><h2 id="登录功能实现" tabindex="-1"><a class="header-anchor" href="#登录功能实现" aria-hidden="true">#</a> 登录功能实现</h2>
 <p>通过浏览器 Web 开发者工具调试会发现，默认登录跳转 URL 显示如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190825834.png" alt="image-20220319082538729" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190825834.png" alt="image-20220319082538729" loading="lazy"></p>
 <p>其中，<code v-pre>9528</code> 为项目默认启动端口号；<code v-pre>/dev-api</code> 在项目根目录文件<code v-pre>.env.development</code> 下配置为：</p>
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code># base api
 VUE_APP_BASE_API = '/dev-api'
@@ -46,9 +46,9 @@ VUE_APP_BASE_API = '/dev-api'
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>在路径<code v-pre>/src/views/</code>下创建对应的文件夹，一般一个路由对应一个文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190858280.png" alt="image-20220319085846213" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190858280.png" alt="image-20220319085846213" loading="lazy"></p>
 <p>配置好之后出现如下二级菜单：</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203191126502.png" alt="image-20220319112656458" width="252" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203191126502.png" alt="image-20220319112656458" width="252" />
 <p>此时，当点击“讲师列表”时，跳转 URL 为 <code v-pre>http://localhost:9528/#/edu/teacher/list</code>；点击“添加讲师”时，跳转 URL 为 <code v-pre>http://localhost:9528/#/edu/teacher/add</code></p>
 </li>
 </ol>
@@ -275,7 +275,7 @@ VUE_APP_BASE_API = 'http://localhost:8001'
 <p class="custom-container-title">Tips</p>
 <p>表格渲染主要包括三部分：查询表单、数据显示表格和分页插件</p>
 </div>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203191909987.png" alt="image-20220319190908877" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203191909987.png" alt="image-20220319190908877" loading="lazy"></p>
 </li>
 <li>
 <p>后端对应 Controller 类使用注解 <code v-pre>@CrossOrigin</code> 解决跨域问题</p>
@@ -357,7 +357,7 @@ VUE_APP_BASE_API = 'http://localhost:8001'
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>点击“删除”按钮会触发执行删除方法<code v-pre>removeDataById(id)</code>，使用 <code v-pre>@click</code>来绑定事件</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201420983.png" alt="image-20220320142008773" width="400" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201420983.png" alt="image-20220320142008773" width="400" />
 </div>
 </li>
 </ol>
@@ -365,7 +365,7 @@ VUE_APP_BASE_API = 'http://localhost:8001'
 <div class="custom-container tip">
 <p class="custom-container-title">需求描述</p>
 <p>需要实现的功能：当点击“添加教师”时，可以输入需要添加的教师的相关信息，并保存数据到数据库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201452912.png" alt="image-20220320145246844" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201452912.png" alt="image-20220320145246844" loading="lazy"></p>
 </div>
 <p>步骤如下：</p>
 <ol>
@@ -515,7 +515,7 @@ export default {
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>1、“保存”按钮会触发执行<code v-pre>saveOrUpdate()</code>方法：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201727051.png" alt="image-20220320172703926" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201727051.png" alt="image-20220320172703926" loading="lazy"></p>
 <p>2、使用<code v-pre>this.$router.push({ path: '需要跳转的路由' })</code>的方式进行路由跳转</p>
 </div>
 </li>
@@ -524,7 +524,7 @@ export default {
 <div class="custom-container tip">
 <p class="custom-container-title">需求描述</p>
 <p>当点击 &quot;教师列表&quot; 中的 &quot;修改&quot; 按钮时，会对教师信息编辑页面，重新编辑该教师信息</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409095815109.png" alt="image-20220409095815109" width="200" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409095815109.png" alt="image-20220409095815109" width="200" />
 </div>
 <p><strong>步骤如下</strong>：</p>
 <ol>
@@ -549,7 +549,7 @@ export default {
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>添加教师与修改教师使用同一个 vue 组件 <code v-pre>form.vue</code>，可以使用 hid<code v-pre>den: true</code> 隐藏一个路由界面</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409120300269.png" alt="image-20220409120300269" width="250" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409120300269.png" alt="image-20220409120300269" width="250" />
 </div>
 </li>
 <li>
@@ -586,9 +586,9 @@ methods: {
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>添加新教师时候，添加界面信息为空，添加界面如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409101223998.png" alt="image-20220409101223998" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409101223998.png" alt="image-20220409101223998" loading="lazy"></p>
 <p>点击修改按钮修改教师信息时，界面会将需要修改的教师的信息回显到修改界面中：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409101426461.png" alt="image-20220409101426461" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409101426461.png" alt="image-20220409101426461" loading="lazy"></p>
 </div>
 </li>
 <li>

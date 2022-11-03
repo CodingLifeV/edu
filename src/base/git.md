@@ -1,5 +1,7 @@
 ---
 title: Git入门
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
 ## Git 是什么？
@@ -26,7 +28,7 @@ title: Git入门
 
    1、Windows 系统安装 Git 之后，在桌面任何位置鼠标右击会出现 **Git Bash Here** 选项，点击使用该命令窗口
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202051930231.png" alt="image-20220205193006177" width="500" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202051930231.png" alt="image-20220205193006177" width="500" />
 
    2、配置 Git 时你需要注册一个 Github 账户[Join GitHub · GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)（或者是Gitee、Gitlab），其中 user.name 是你 Github 的用户名，user.email 是你注册 Github 使用的邮箱
 
@@ -45,7 +47,7 @@ title: Git入门
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com" 
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061800953.png" alt="image-20220206180032784" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061800953.png" alt="image-20220206180032784" width="600" />
 
 3. 将新的 SSH 公钥添加到 GitHub 帐户中，首先使用以下命令将密钥信息复制到粘贴板：
 
@@ -96,7 +98,7 @@ title: Git入门
 
    ::: 
 
-   ![image-20220206175714778](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061757920.png)
+   ![image-20220206175714778](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061757920.png)
 
 ## 使用 Git 提交本地项目到 Github 仓库
 
@@ -116,7 +118,7 @@ public class Test {
 
 1. 创建一个新的 Github 仓库，名字为 project1
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061352994.png" alt="image-20220206135231827" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061352994.png" alt="image-20220206135231827" width="600" />
 
 2. 在项目文件下 CodingLife 下打开 Git Bash 窗口，初始化该文件夹，使其成为一个 Git 本地仓库
 
@@ -126,11 +128,11 @@ public class Test {
 
    初始化完成后出现了一个 .git 文件夹，此时我们的 CodingLife 文件夹为**工作区**，.git 文件夹为 **Git 版本库**，Git 版本库中存在两个最重要的内容：**暂存区**（stage，或者叫 index），还有 Git 为我们自动创建的第一个分支 `master`，以及指向 `master` 的一个指针叫`HEAD`，如下图表示
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061537715.png" alt="image-20220206153740544" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061537715.png" alt="image-20220206153740544" width="600" />
 
    使用 `git init` 命令的时候， Git 默认会在 **.git** 版本库中创建一个 `master` 分支 
 
-   ![image-20220206141157951](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061411038.png)
+   ![image-20220206141157951](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061411038.png)
 
 3. 把文件添加到版本库暂存区
 
@@ -140,7 +142,7 @@ public class Test {
 
    使用命令`git add .`会将工作区的 Test.java 文件添加到暂存区
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061559422.png" alt="image-20220206155904346" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061559422.png" alt="image-20220206155904346" width="700" />
 
 4. 把文件添加到版本库 master 分支
 
@@ -148,7 +150,7 @@ public class Test {
    git commit -m "项目CodingLife,版本v1.0,新增了Test.java文件"
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061612595.png" alt="image-20220206161227478" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061612595.png" alt="image-20220206161227478" width="700" />
 
    ::: tip
 
@@ -162,13 +164,13 @@ public class Test {
    git remote add origin git@github.com:CodingLifeVV/project1.git
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061941039.png" alt="image-20220206194144959" width="1000" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061941039.png" alt="image-20220206194144959" width="1000" />
 
    ::: tip
 
    1、使用 `git remote add origin` 命令会将一个已有的本地仓库和一个 Github 仓库进行关联，关联之后即可以把本地仓库的内容推送到 Github 仓库中，`origin` 是远程的意思，origin 后需要添加你需要关联的Github仓库的地址信息，在你的 Github 仓库 **Code** 下拉选项中，可以选择复制 **SSH key** ，添加到 origin 之后。
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202082159219.png" alt="image-20220208215935104" width="350" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202082159219.png" alt="image-20220208215935104" width="350" />
 
    2、`git remote add origin` 命令只需要第一次推送到远程库的时候使用，之后在本地库修改完代码上传远程库的时候就不要要使用了。
 
@@ -180,7 +182,7 @@ public class Test {
    git push -u origin master
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202062016970.png" alt="image-20220206201625887" width="1000" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202062016970.png" alt="image-20220206201625887" width="1000" />
 
    ::: tip
    
@@ -196,11 +198,11 @@ public class Test {
    git push origin master
    ```
    
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202061812871.png" alt="image-20220206181216793" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202061812871.png" alt="image-20220206181216793" width="700" />
    
    :::
    
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071444265.png" alt="image-20220207144453082" width="800" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071444265.png" alt="image-20220207144453082" width="800" />
    
    ::: warning
    
@@ -253,7 +255,7 @@ git commit -m "Test.java中增加了一句输出语句"
 git push origin master
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202071606125.png" alt="image-20220207160641031" width="700" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202071606125.png" alt="image-20220207160641031" width="700" />
 
 ___
 
@@ -314,7 +316,7 @@ git push origin master
    git log
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091145176.png" alt="image-20220209114534068" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091145176.png" alt="image-20220209114534068" width="600" />
 
    ::: info 知识点
 
@@ -326,7 +328,7 @@ git push origin master
 
    ::: 
 
-   ![image-20220209115143732](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091151916.png)
+   ![image-20220209115143732](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091151916.png)
 
 2. 选择回退的版本，这里选择回退上一个版本（过去版本）
 
@@ -336,7 +338,7 @@ git push origin master
    git reset --hard 720e08
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091158671.png" alt="image-20220209115811605" width="500" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091158671.png" alt="image-20220209115811605" width="500" />
 
    ::: tip
 
@@ -385,11 +387,11 @@ git push origin master
 
    当我们回退到某一个版本之后（我们暂且称其为当前版本），再次使用 `git log` 命令，显示的最近一次的版本号为当前版本，即上图版本号为`720e08...`的版本。如果我们某一天后悔之前使用 git 做的回退操作了，想恢复到版本号为`421b0f...`的版本，却忘记了该版本号，则需要使用`git reflog`命令来查询具体要恢复到哪一个版本对应的版本号
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091534894.png" alt="image-20220209153455801" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091534894.png" alt="image-20220209153455801" width="700" />
 
    `git reflog` 命令会将每一次 git 命令操作记录下来，用来查看历史命令，而 `git log`命令只查看历史提交命令
    
-   ![image-20220209174804027](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091748135.png)
+   ![image-20220209174804027](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091748135.png)
 
 ## Git 创建与合并分支
 
@@ -403,7 +405,7 @@ git push origin master
    git checkout -b dev
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091619065.png" alt="image-20220209161901971" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091619065.png" alt="image-20220209161901971" width="600" />
 
    我们可以看到，创建一个`dev`分支其实是相当于：新建一个指针 `dev`，该指针指向`master`相同的提交，再把`HEAD`指向`dev`，就表示当前分支在`dev`上
 
@@ -469,7 +471,7 @@ git push origin master
    git commit -m "dev branch change Test.java"
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091734482.png" alt="image-20220209173413388" width="600" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091734482.png" alt="image-20220209173413388" width="600" />
 
    在 dev 分支下查看 `Test.java` 内容：
 
@@ -504,9 +506,9 @@ git push origin master
    git merge dev       # 将 dev 分支内容合并到 master 分支
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091804532.png" alt="image-20220209180441432" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091804532.png" alt="image-20220209180441432" width="700" />
 
-   ![image-20220209175445533](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091754649.png)
+   ![image-20220209175445533](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091754649.png)
 
 4. 合并完成，删除 dev 分支
 
@@ -514,7 +516,7 @@ git push origin master
    git branch -d dev # 删除 dev 分支
    ```
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202091805571.png" alt="image-20220209180558482" width="700" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202091805571.png" alt="image-20220209180558482" width="700" />
 
 ## 使用 Git 克隆 Github 仓库项目
 
@@ -534,9 +536,9 @@ git push origin master
 
    `git clone` 命令后为远程仓库地址：
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202090959495.png" alt="image-20220209095952409" width="400" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202090959495.png" alt="image-20220209095952409" width="400" />
 
-   ![image-20220209095545831](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202090955944.png)
+   ![image-20220209095545831](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202090955944.png)
 
 
 
@@ -555,7 +557,7 @@ git push origin master
 
    提交日志：
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220411151632905.png" alt="image-20220411151632905" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220411151632905.png" alt="image-20220411151632905" />
 
 2. 切换到 dev 分支，拉取代码
 

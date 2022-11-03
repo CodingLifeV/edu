@@ -4,12 +4,24 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
+      text: "序章",
+      icon: "launch",
+      prefix: "edu/",
+      collapsable: true,
+      children:[
+        { text: "项目架构及功能概述", icon: "", link: "guide/func" },
+        { text: "学习路线", icon: "", link: "guide/knowledge" },
+      ],
+    },
+    
+    {
       text: "后端",
       icon: "frame",
       prefix: "edu/",
       collapsable: true,
       children:[
-        { text: "工具篇", icon: "config", link: "util/utils" },
+        { text: "技术要点篇", icon: "", link: "backend/key" },
+        { text: "数据库概述", icon: "", link: "backend/sql" },
       ],
     },
     {
@@ -18,8 +30,8 @@ export const enSidebar = sidebar({
       prefix: "edu/",
       collapsable: true,
       children:[
-        { text: "基础知识", icon: "guide", link: "springcloud/springcloud-1" },
-        { text: "项目相关", icon: "launch", link: "springcloud/springcloud-2" },
+        { text: "基础知识", icon: "", link: "springcloud/springcloud-1" },
+        { text: "项目相关", icon: "", link: "springcloud/springcloud-2" },
       ],
     },
     {
@@ -28,13 +40,13 @@ export const enSidebar = sidebar({
       prefix: "edu/",
       collapsable: true,
       children:[
-        { text: "简单介绍", icon: "guide", link: "front/front-01" },
-        { text: "功能实现", icon: "launch", link: "front/front-02" },
+        { text: "简单介绍", icon: "", link: "front/front-01" },
+        { text: "功能实现", icon: "", link: "front/front-02" },
       ],
     },
     {
-      text: "基础学习",
-      icon: "computer",
+      text: "工具篇",
+      icon: "tool",
       prefix: "base/",
       collapsable: true,
       children:[

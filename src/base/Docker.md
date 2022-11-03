@@ -1,19 +1,10 @@
 ---
 title: Docker入门
 order: 3
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
-::: tip
-
-:::
-
-::: warning 
-
-:::
-
-::: danger 
-
-:::
 
 ### 初识 Docker
 
@@ -37,7 +28,7 @@ Docker 使用客户端-服务器架构, Docker 客户端与 Docker daemon （Doc
 
 4. `Dockerfile`：是一个用来构建镜像 image 的文本文件。如果写程序需要源代码，那么写 image 就需要 dockerfile，dockerfile 就是 image 的源代码。
 
-   ![image-20220210151652293](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101516523.png)
+   ![image-20220210151652293](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101516523.png)
 
 当我们对 Docker 有了一个初步的认识之后，便可以使用 Docker 来执行构建、运行容器等操作。
 
@@ -126,7 +117,7 @@ Docker可以安装在 Windows、Linux、Mac 等各个平台上，以 CentOS 为�
    sudo docker run hello-world
    ```
 
-   ![image-20220210174957901](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101749035.png)
+   ![image-20220210174957901](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101749035.png)
 
 <a id="_link_docker1">docker run命令经历了上图五步</a>：
 
@@ -140,7 +131,7 @@ Docker可以安装在 Windows、Linux、Mac 等各个平台上，以 CentOS 为�
 
 5. 服务器端守护进程使用 **hello-world**  镜像创建了一个能够执行 **hello-world**  程序的容器 Container 并将该容器加载到内存运行（上文已说过，我们可以简单理解为镜像 Image 为一个可执行程序，容器 Container 为镜像 Image 加载到内存执行起来的一个进程）
 
-   ![image-20220210180339988](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101803105.png)
+   ![image-20220210180339988](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101803105.png)
 
 ### Docker 中关于镜像的基本操作
 
@@ -154,7 +145,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker search centos
    ```
 
-   ![image-20220211110231042](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111102140.png)
+   ![image-20220211110231042](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111102140.png)
 
    ::: tip
 
@@ -168,7 +159,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker pull centos
    ```
 
-   ![image-20220211110959830](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111109944.png)
+   ![image-20220211110959830](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111109944.png)
 
    ::: tip
 
@@ -180,7 +171,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
 
    `centos7` 为指定的 `TAG`，在 Docker Hub 中可以寻找到具体版本的 CentOS 镜像 `TAG`
 
-   ![pullcentos1](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111135863.gif)
+   ![pullcentos1](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111135863.gif)
 
    :::
 
@@ -190,7 +181,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker images
    ```
 
-   ![image-20220211114228802](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111142901.png)
+   ![image-20220211114228802](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111142901.png)
 
    我们发现，通过 pull 命令已经将远程库的 CentOS 镜像下载到了本地电脑上了
    
@@ -212,7 +203,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker ps
    ```
 
-   ![image-20220211180059707](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111800902.png)
+   ![image-20220211180059707](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111800902.png)
 
    ::: tip
 
@@ -234,13 +225,13 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    
    1、`centos:latest`为镜像仓库名+镜像`TAG`，此处也可以替换为镜像 ID（Image Id，若本地系统存在该镜像），可替换为下图的 `5d0da3dc9764`
    
-   ![image-20220211191240713](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111912784.png)
+   ![image-20220211191240713](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111912784.png)
    
    2、`-it`是两个参数：`-i`和`-t`，前者表示打开并保持 stdout（标准输出，指的就是在命令行里，每次你输入指令后，终端上打印出来的那些话，那些反馈），后者表示分配一个伪输入终端
    
    3、使用命令`exit`退出容器，退出容器后，此时容器的状态处于 Exited，而不是运行状态。若不使用 `exit`，而是使用`CTRL+p`  `CTRL+q` 退出，此时容器的状态为 Up，表示容器在后台运行
    
-   ![image-20220211193259098](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111932246.png)
+   ![image-20220211193259098](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111932246.png)
    
    4、`/bin/bash`表示容器启动后运行 bash
    
@@ -250,7 +241,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker run --name "codinglife" -it centos:latest /bin/bash
    ```
    
-   ![image-20220211194947869](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111949979.png)
+   ![image-20220211194947869](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111949979.png)
    
    注意每一次使用`docker run`命令都会新生成一个容器，容器的ID（Container id）不相同
    
@@ -260,7 +251,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
    docker run -d centos:latest /bin/bash
    ```
    
-   ![image-20220211200320260](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202112003364.png)
+   ![image-20220211200320260](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202112003364.png)
    
    使用`-d`参数后台运行一个容器，然而使用`docker ps`命令并没有查询到任何运行的容器，原因在于：docker 中必须要保持一个进程的运行，要不然整个容器启动后就会马上kill itself
    
@@ -276,7 +267,7 @@ Docker 相关命令参考[Docker CLI](https://docs.docker.com/engine/api/)
 
    容器启动后可以停止其运行，`container_id` 为容器 ID，`container_name` 为容器 Name
 
-   ![image-20220212105747075](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202121057199.png)
+   ![image-20220212105747075](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202121057199.png)
 
 4. 启动容器或者重启容器
 
@@ -379,7 +370,7 @@ Dockerfile 是一个用来构建镜像 Image 的文本文件，Docker 可以通�
 
    `-t`参数镜像的名字及标签，`docker build` 最后面要有 `.` 符号
    
-   ![image-20220214145702062](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202141457199.png)
+   ![image-20220214145702062](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202141457199.png)
 
 4. 运行启动的镜像
 
@@ -431,11 +422,11 @@ Dockerfile 是一个用来构建镜像 Image 的文本文件，Docker 可以通�
 
    参数`-m`对镜像进行一个简单的说明；参数`-a`指定提交镜像的作者信息；`7c072f2eea68`为被转化容器的 ID，`codinglife/centos:1.0`分别为目标镜像的用户名 / 仓库名 : tag 信息
    
-   ![image-20220216165023133](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161650262.png)
+   ![image-20220216165023133](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161650262.png)
 
 4. 测试转化的镜像是否能够执行 git 操作
 
-   ![image-20220216165724145](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161657275.png)
+   ![image-20220216165724145](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161657275.png)
 
 ### Docker 数据持久化
 
@@ -474,7 +465,7 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
 
    1、`-v /opt/mydocker/myvolume:/opt/myvolume`表示将宿主机目录和容器目录进行关联，关联之后，不论在宿主机目录下，还是容器内目录下修改文件，数据都会在两者之间同步
 
-   ![image-20220215115726576](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151157776.png)
+   ![image-20220215115726576](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151157776.png)
 
    2、默认情况下，挂载文件权限是读写权限，也可使用`:ro` 参数指定只读权限
 
@@ -491,13 +482,13 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
    docker run -d -v /opt/myvolume centos /bin/bash
    ```
 
-   ![image-20220215171110905](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151711046.png)
+   ![image-20220215171110905](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151711046.png)
 
    4、命令`docker volume ls` 可以查看挂载卷的信息，如果指定了容器内目录，命令查询不到任何挂载卷信息
 
    5、如果不指定挂载卷的宿主机绝对路径目录，会默认存储在宿主机的`/var/lib/docker/volumes`目录下
 
-   ![image-20220215171945416](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151719541.png)
+   ![image-20220215171945416](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151719541.png)
 
    :::
 
@@ -508,7 +499,7 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
    docker inspect container_id
    ```
 
-   ![image-20220215163540394](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151635529.png)
+   ![image-20220215163540394](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151635529.png)
 
 3. 构建自有镜像时，设置数据卷
 
@@ -524,7 +515,7 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
 
    指令 `VOLUME` 指定设置数据卷的容器内目录
    
-   ![image-20220215180156424](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151801667.png)
+   ![image-20220215180156424](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151801667.png)
 
 4. 删除数据卷
 
@@ -559,11 +550,11 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
    
    发现容器 son1 和 son2 同样有了 readme.txt 文件，实现了数据共享
 
-   ![image-20220216121223528](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161212693.png)
+   ![image-20220216121223528](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161212693.png)
 
 3. 删除父容器，并在 son1 容器新增 readmeSon1.txt 文件，观察 son2 容器数据变化
 
-   ![image-20220216122704204](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161227360.png)
+   ![image-20220216122704204](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161227360.png)
 
    使用`--volumes-from`参数使多个容器共享数据之后，除非将所有共享数据的容器删除，否则容器之间一直会进行数据同步共享
 
@@ -579,7 +570,7 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
    Docker login
    ```
 
-   ![image-20220216145414705](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161454828.png)
+   ![image-20220216145414705](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161454828.png)
 
 3. 推送本地的镜像到 DockerHub 上
 
@@ -589,6 +580,6 @@ Docker容器产生的数据，如果不通过`docker commit`生成新的镜像�
 
    注意命令`push`后面的名称 `wyjpro`必须是你的 Docker Hub 登录用户名，否则推送会失败
    
-   ![image-20220216154941296](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161549402.png)
+   ![image-20220216154941296](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161549402.png)
 
-   ![image-20220216154634005](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161546141.png)
+   ![image-20220216154634005](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161546141.png)

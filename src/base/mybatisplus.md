@@ -6,7 +6,7 @@ title: mybatis-plus入门
 # This control sidebar order
 order: 1
 # Set author
-author: Ms.Hope
+author: Ms.Wyj
 # Set writing time
 date: 2020-01-01
 # A page can have multiple categories
@@ -20,10 +20,8 @@ tag:
 sticky: true
 # this page will appear in starred articles
 star: true
-# You can customize footer content
-footer: Footer content for test
-# You can customize copyright content
-copyright: No Copyright
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
 ## Mybatis-Plus 概述
@@ -36,7 +34,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
 
 创建一个简单的 SpringBoot 项目`mybatisplus`来读取用户表 User 中的数据，项目工程结构如下：
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241034788.png" alt="image-20220224103427728" width="400" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241034788.png" alt="image-20220224103427728" width="400" />
 
 **项目集成 Mybatis-Plus 步骤如下**： 
 
@@ -64,7 +62,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
 
 2. idea 初始化一个 SpringBoot 工程，SpringBoot 版本 `2.6.3`，`groupId` 为 `com.codinglife`，`artifactId` 为 `mybatisplus`
 
-   ![image-20220227161753347](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202271618467.png)
+   ![image-20220227161753347](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202271618467.png)
 
 3. `pom.xml` 文件引入项目依赖
 
@@ -177,7 +175,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
 
 9. 测试结果输出
 
-   ![image-20220224102059349](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241021505.png)
+   ![image-20220224102059349](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241021505.png)
 
 ## Mapper CRUD 接口
 
@@ -189,7 +187,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
 
 1. 对需要插入数据的数据表设置主键自增
 
-   ![image-20220224154501407](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241545480.png)
+   ![image-20220224154501407](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241545480.png)
 
    可以在创建表的时候使用`auto_increment` 设置主键自增
 
@@ -218,7 +216,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
 
    MyBatis-Plus 默认的主键策略是 `ID_WORKER`（全局唯一策略），如果不使用 `@TableId(type = IdType.AUTO)`，会自动生成一个全局唯一的ID：
 
-   ![image-20220224161612967](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241616054.png)
+   ![image-20220224161612967](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241616054.png)
 
    :::
 
@@ -240,7 +238,7 @@ MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，使用 MyBatis-Pl
    int insert(T entity);
    ```
 
-   ![image-20220224170230650](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241702732.png)
+   ![image-20220224170230650](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241702732.png)
 
 ### 更新Update
 
@@ -460,7 +458,7 @@ Mybatis-Plus 提供了字段自动填充，继续使用项目 mybatisplus ，对
    }
    ```
    
-   ![image-20220225161830034](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202272056247.png)
+   ![image-20220225161830034](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202272056247.png)
 
 ### 逻辑删除
 
@@ -552,9 +550,9 @@ Mybatis-Plus 提供了字段自动填充，继续使用项目 mybatisplus ，对
    
    删除前 `deleted=0`，删除后`deleted=1`
    
-   ![image-20220228151039966](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281510062.png)
+   ![image-20220228151039966](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281510062.png)
    
-   ![image-20220228151531171](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281515262.png)
+   ![image-20220228151531171](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281515262.png)
 
 ### 乐观锁的实现—版本号机制
 
@@ -638,9 +636,9 @@ Mybatis-Plus 提供了字段自动填充，继续使用项目 mybatisplus ，对
    }
    ```
    
-   ![image-20220228093457486](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202280935640.png)
+   ![image-20220228093457486](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202280935640.png)
    
-   ![image-20220228093628200](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202280936285.png)
+   ![image-20220228093628200](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202280936285.png)
 
 6. 修改测试代码，模拟更新数据时，当前版本号和数据库版本号不一致导致数据更新失败
    
@@ -662,9 +660,9 @@ Mybatis-Plus 提供了字段自动填充，继续使用项目 mybatisplus ，对
    }
    ```
    
-   ![image-20220228101711490](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281017590.png)
+   ![image-20220228101711490](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281017590.png)
    
-   ![image-20220228102022275](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281020341.png)
+   ![image-20220228102022275](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281020341.png)
 
 ### 分页插件
 
@@ -952,8 +950,8 @@ Mybatis-Plus 提供了字段自动填充，继续使用项目 mybatisplus ，对
 
 生成前：
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203022221812.png" width="400">
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203022221812.png" width="400">
 
 生成后：
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203022222168.png" width="400" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203022222168.png" width="400" />

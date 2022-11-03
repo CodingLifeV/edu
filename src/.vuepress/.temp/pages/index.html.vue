@@ -48,22 +48,22 @@
 </tr>
 <tr>
 <td>Nginx</td>
-<td></td>
+<td>1.21.6</td>
 <td>静态资源服务器</td>
 </tr>
 <tr>
 <td>OSS</td>
-<td></td>
+<td>3.10.2</td>
 <td>阿里云对象存储服务</td>
 </tr>
 <tr>
 <td>Lombok</td>
-<td></td>
+<td>1.18.22</td>
 <td>简化对象封装工具</td>
 </tr>
 <tr>
 <td>Gateway</td>
-<td></td>
+<td>3.1.1</td>
 <td>服务网关</td>
 </tr>
 </tbody>
@@ -106,6 +106,10 @@
 <li>前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank"><a href="https://github.com/CodingLifeVV/edu-front" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-front<ExternalLinkIcon/></a></a></li>
 </ul>
 <h2 id="交流学习" tabindex="-1"><a class="header-anchor" href="#交流学习" aria-hidden="true">#</a> 交流学习</h2>
+<ul>
+<li>交流学习 <a href="mailto:1013801973@qq.com">1013801973@qq.com</a></li>
+<li>github地址：<a href="https://github.com/CodingLifeVV" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV<ExternalLinkIcon/></a></li>
+</ul>
 </div></template>
 
 

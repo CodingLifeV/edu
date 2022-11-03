@@ -10,7 +10,8 @@ tag:
 
 navbar: true
 breadcrumb: true
-
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
 ## 项目描述
@@ -31,7 +32,7 @@ breadcrumb: true
 
 1. 安装 [vscode下载](https://code.visualstudio.com/)（用来编写前端代码），安装好之后启动软件[切换中文界面](https://segmentfault.com/a/1190000022474382)以及安装 ESlint 插件（代码格式化）
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131321967.png" alt="image-20220313132135817" width="400" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131321967.png" alt="image-20220313132135817" width="400" />
 
 2. [下载安装 Node.js](https://nodejs.org/en/download/)，建议下载 LTS 版本，安装好之后使用命令`node -v`查看 Node.js ，使用命令`npm -v`查看 npm 版本
 
@@ -92,7 +93,7 @@ breadcrumb: true
 
    启动后程序自动运行http://localhost:9527/ ，登录成功之后界面显示如下：
 
-   ![image-20220313153843311](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131545821.png)
+   ![image-20220313153843311](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131545821.png)
 
 一旦我们掌握了 vue-element-admin 的相关开发技巧，便可以使用其中的控件来构建自己项目的相关模块。
 
@@ -129,13 +130,13 @@ vue-admin-template 是基于 vue-element-admin 的一套**后台前端管理系�
 
    启动后程序自动运行 http://localhost:9528/ ：
 
-   ![image-20220319081935558](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190819678.png)
+   ![image-20220319081935558](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190819678.png)
    
    登录成功之后界面显示如下：
    
-   ![image-20220313161023817](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131610978.png)
+   ![image-20220313161023817](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131610978.png)
 
 此时便可以使用该源码来进行二次开发，开发之前我们有必要修改项目根目录 `package.json` 文件中关于项目的描述信息：
 
-![image-20220319081811968](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190818127.png)
+![image-20220319081811968](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190818127.png)
 

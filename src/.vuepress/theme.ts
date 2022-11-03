@@ -6,8 +6,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "Mr.Wyj",
+    url: "https://github.com/CodingLifeVV",
   },
 
   iconAssets: "iconfont",
@@ -33,7 +33,7 @@ export default hopeTheme({
       displayFooter: true,
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "GitHub上编辑此页面",
       },
     },
 
@@ -51,7 +51,7 @@ export default hopeTheme({
     // If you don't need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
+    //comment: {
       /**
        * Using Giscus
        */
@@ -70,9 +70,9 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      provider: "Waline",
-      serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    },
+      //provider: "Waline",
+      //serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    //},
 
     // Disable features you don't want here
     mdEnhance: {

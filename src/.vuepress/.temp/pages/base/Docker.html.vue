@@ -1,13 +1,4 @@
-<template><div><div class="custom-container tip">
-<p class="custom-container-title">Tips</p>
-</div>
-<div class="custom-container warning">
-<p class="custom-container-title">Note</p>
-</div>
-<div class="custom-container danger">
-<p class="custom-container-title">Warning</p>
-</div>
-<h3 id="初识-docker" tabindex="-1"><a class="header-anchor" href="#初识-docker" aria-hidden="true">#</a> 初识 Docker</h3>
+<template><div><h3 id="初识-docker" tabindex="-1"><a class="header-anchor" href="#初识-docker" aria-hidden="true">#</a> 初识 Docker</h3>
 <div class="custom-container tip">
 <p class="custom-container-title">Docker 使用场景</p>
 <p>试想有这样一个案例：</p>
@@ -27,7 +18,7 @@
 </li>
 <li>
 <p><code v-pre>Dockerfile</code>：是一个用来构建镜像 image 的文本文件。如果写程序需要源代码，那么写 image 就需要 dockerfile，dockerfile 就是 image 的源代码。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101516523.png" alt="image-20220210151652293" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101516523.png" alt="image-20220210151652293" loading="lazy"></p>
 </li>
 </ol>
 <p>当我们对 Docker 有了一个初步的认识之后，便可以使用 Docker 来执行构建、运行容器等操作。</p>
@@ -92,7 +83,7 @@ Server: Docker Engine - Community
 <li>
 <p>通过运行 hello-world 镜像来验证 Docker 引擎是否已正确安装</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">docker</span> run hello-world
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101749035.png" alt="image-20220210174957901" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101749035.png" alt="image-20220210174957901" loading="lazy"></p>
 </li>
 </ol>
 <p><a id="_link_docker1">docker run命令经历了上图五步</a>：</p>
@@ -111,7 +102,7 @@ Server: Docker Engine - Community
 </li>
 <li>
 <p>服务器端守护进程使用 <strong>hello-world</strong>  镜像创建了一个能够执行 <strong>hello-world</strong>  程序的容器 Container 并将该容器加载到内存运行（上文已说过，我们可以简单理解为镜像 Image 为一个可执行程序，容器 Container 为镜像 Image 加载到内存执行起来的一个进程）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202101803105.png" alt="image-20220210180339988" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202101803105.png" alt="image-20220210180339988" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="docker-中关于镜像的基本操作" tabindex="-1"><a class="header-anchor" href="#docker-中关于镜像的基本操作" aria-hidden="true">#</a> Docker 中关于镜像的基本操作</h3>
@@ -121,7 +112,7 @@ Server: Docker Engine - Community
 <li>
 <p>查看 Docker Hub 中是否存在 CentOS 镜像</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> search centos
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111102140.png" alt="image-20220211110231042" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111102140.png" alt="image-20220211110231042" loading="lazy"></p>
 <div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>Docker Hub 是 Docker 官方维护了一个公共镜像仓库 ，我们可以在 Docker Hub上下载镜像以及上传本地镜像</p>
@@ -130,19 +121,19 @@ Server: Docker Engine - Community
 <li>
 <p>下载 CentOS 镜像</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> pull centos
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111109944.png" alt="image-20220211110959830" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111109944.png" alt="image-20220211110959830" loading="lazy"></p>
 <div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p><code v-pre>docker pull centos</code>  默认下载最近 latest 版本的镜像，如果你想下载指定版本的 CentOS 镜像，需要指定 <code v-pre>TAG</code>，一个镜像仓库可能会包含很多不同版本的镜像，使用<code v-pre>TAG</code>标签进行区分，例如</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>docker pull centos:centos7
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code v-pre>centos7</code> 为指定的 <code v-pre>TAG</code>，在 Docker Hub 中可以寻找到具体版本的 CentOS 镜像 <code v-pre>TAG</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111135863.gif" alt="pullcentos1" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111135863.gif" alt="pullcentos1" loading="lazy"></p>
 </div>
 </li>
 <li>
 <p>查看当前系统的镜像信息</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> images
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111142901.png" alt="image-20220211114228802" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111142901.png" alt="image-20220211114228802" loading="lazy"></p>
 <p>我们发现，通过 pull 命令已经将远程库的 CentOS 镜像下载到了本地电脑上了</p>
 </li>
 <li>
@@ -158,7 +149,7 @@ Server: Docker Engine - Community
 <li>
 <p>查看当前正在运行的容器</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> <span class="token function">ps</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111800902.png" alt="image-20220211180059707" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111800902.png" alt="image-20220211180059707" loading="lazy"></p>
 <div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p><code v-pre>docker ps</code> 表示查看当前正在运行的容器，如果想查看所有的容器，包括未运行的容器，使用命令：</p>
@@ -171,18 +162,18 @@ Server: Docker Engine - Community
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">知识点</p>
 <p>1、<code v-pre>centos:latest</code>为镜像仓库名+镜像<code v-pre>TAG</code>，此处也可以替换为镜像 ID（Image Id，若本地系统存在该镜像），可替换为下图的 <code v-pre>5d0da3dc9764</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111912784.png" alt="image-20220211191240713" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111912784.png" alt="image-20220211191240713" loading="lazy"></p>
 <p>2、<code v-pre>-it</code>是两个参数：<code v-pre>-i</code>和<code v-pre>-t</code>，前者表示打开并保持 stdout（标准输出，指的就是在命令行里，每次你输入指令后，终端上打印出来的那些话，那些反馈），后者表示分配一个伪输入终端</p>
 <p>3、使用命令<code v-pre>exit</code>退出容器，退出容器后，此时容器的状态处于 Exited，而不是运行状态。若不使用 <code v-pre>exit</code>，而是使用<code v-pre>CTRL+p</code>  <code v-pre>CTRL+q</code> 退出，此时容器的状态为 Up，表示容器在后台运行</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111932246.png" alt="image-20220211193259098" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111932246.png" alt="image-20220211193259098" loading="lazy"></p>
 <p>4、<code v-pre>/bin/bash</code>表示容器启动后运行 bash</p>
 <p>5、可以使用参数<code v-pre>--name</code>为启动的容器指定一个名称</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">--name</span> <span class="token string">"codinglife"</span> <span class="token parameter variable">-it</span> centos:latest /bin/bash
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202111949979.png" alt="image-20220211194947869" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202111949979.png" alt="image-20220211194947869" loading="lazy"></p>
 <p>注意每一次使用<code v-pre>docker run</code>命令都会新生成一个容器，容器的ID（Container id）不相同</p>
 <p>6、使用参数<code v-pre>-d</code>可以使容器在后台运行，不进入伪终端，并返回容器id</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> centos:latest /bin/bash
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202112003364.png" alt="image-20220211200320260" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202112003364.png" alt="image-20220211200320260" loading="lazy"></p>
 <p>使用<code v-pre>-d</code>参数后台运行一个容器，然而使用<code v-pre>docker ps</code>命令并没有查询到任何运行的容器，原因在于：docker 中必须要保持一个进程的运行，要不然整个容器启动后就会马上kill itself</p>
 <p>7、有关 <code v-pre>docker run</code> 的更多参数可以参考<a href="https://docs.docker.com/engine/reference/commandline/docker/" target="_blank" rel="noopener noreferrer">docker | Docker Documentation<ExternalLinkIcon/></a></p>
 </div>
@@ -191,7 +182,7 @@ Server: Docker Engine - Community
 <p>停止容器运行</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> stop container_id/container_name
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>容器启动后可以停止其运行，<code v-pre>container_id</code> 为容器 ID，<code v-pre>container_name</code> 为容器 Name</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202121057199.png" alt="image-20220212105747075" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202121057199.png" alt="image-20220212105747075" loading="lazy"></p>
 </li>
 <li>
 <p>启动容器或者重启容器</p>
@@ -327,7 +318,7 @@ Server: Docker Engine - Community
 <p>构建镜像</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> build <span class="token parameter variable">-t</span> codinglife/mytomcat01:1.0 <span class="token builtin class-name">.</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code v-pre>-t</code>参数镜像的名字及标签，<code v-pre>docker build</code> 最后面要有 <code v-pre>.</code> 符号</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202141457199.png" alt="image-20220214145702062" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202141457199.png" alt="image-20220214145702062" loading="lazy"></p>
 </li>
 <li>
 <p>运行启动的镜像</p>
@@ -361,11 +352,11 @@ Server: Docker Engine - Community
 <p>使用<code v-pre>exit</code>退出容器，将容器转化为一个镜像：</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> commit <span class="token parameter variable">-m</span> <span class="token string">"centos with git and vim"</span> <span class="token parameter variable">-a</span> <span class="token string">"codinglife"</span> 7c072f2eea68 codinglife/centos:1.0
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>参数<code v-pre>-m</code>对镜像进行一个简单的说明；参数<code v-pre>-a</code>指定提交镜像的作者信息；<code v-pre>7c072f2eea68</code>为被转化容器的 ID，<code v-pre>codinglife/centos:1.0</code>分别为目标镜像的用户名 / 仓库名 : tag 信息</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161650262.png" alt="image-20220216165023133" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161650262.png" alt="image-20220216165023133" loading="lazy"></p>
 </li>
 <li>
 <p>测试转化的镜像是否能够执行 git 操作</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161657275.png" alt="image-20220216165724145" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161657275.png" alt="image-20220216165724145" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="docker-数据持久化" tabindex="-1"><a class="header-anchor" href="#docker-数据持久化" aria-hidden="true">#</a> Docker 数据持久化</h3>
@@ -392,7 +383,7 @@ Server: Docker Engine - Community
 <p>参数<code v-pre>-v</code> 命令格式如下：</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-di</span> <span class="token parameter variable">-v</span> /宿主机绝对路径目录:/容器内目录 centos
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>1、<code v-pre>-v /opt/mydocker/myvolume:/opt/myvolume</code>表示将宿主机目录和容器目录进行关联，关联之后，不论在宿主机目录下，还是容器内目录下修改文件，数据都会在两者之间同步</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151157776.png" alt="image-20220215115726576" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151157776.png" alt="image-20220215115726576" loading="lazy"></p>
 <p>2、默认情况下，挂载文件权限是读写权限，也可使用<code v-pre>:ro</code> 参数指定只读权限</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">-v</span> /opt/mydocker/myvolume:/opt/myvolume:ro centos /bin/bash
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3、可以使用具名挂载的方式来运行一个容器，该方式会为挂载卷进行自定义命名，匿名挂载方式 Docker 会为挂载卷生成一个很长的 16 进制数字</p>
@@ -400,17 +391,17 @@ Server: Docker Engine - Community
 <span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">-v</span> codinglifev:/opt/myvolume centos /bin/bash
 <span class="token comment"># 匿名挂载格式: -v 容器内路径</span>
 <span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">-v</span> /opt/myvolume centos /bin/bash
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151711046.png" alt="image-20220215171110905" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151711046.png" alt="image-20220215171110905" loading="lazy"></p>
 <p>4、命令<code v-pre>docker volume ls</code> 可以查看挂载卷的信息，如果指定了容器内目录，命令查询不到任何挂载卷信息</p>
 <p>5、如果不指定挂载卷的宿主机绝对路径目录，会默认存储在宿主机的<code v-pre>/var/lib/docker/volumes</code>目录下</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151719541.png" alt="image-20220215171945416" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151719541.png" alt="image-20220215171945416" loading="lazy"></p>
 </div>
 </li>
 <li>
 <p>查看数据是否挂载成功，容器内部详细</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment"># container_id 容器 ID</span>
 <span class="token function">docker</span> inspect container_id
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151635529.png" alt="image-20220215163540394" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151635529.png" alt="image-20220215163540394" loading="lazy"></p>
 </li>
 <li>
 <p>构建自有镜像时，设置数据卷</p>
@@ -421,7 +412,7 @@ VOLUME <span class="token punctuation">[</span><span class="token string">"/opt/
 CMD <span class="token builtin class-name">echo</span> <span class="token string">"-------end--------"</span>
 CMD /bin/bash
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>指令 <code v-pre>VOLUME</code> 指定设置数据卷的容器内目录</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202151801667.png" alt="image-20220215180156424" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202151801667.png" alt="image-20220215180156424" loading="lazy"></p>
 </li>
 <li>
 <p>删除数据卷</p>
@@ -444,11 +435,11 @@ CMD /bin/bash
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>使用参数<code v-pre>--volumes-from</code>来构建共享数据的容器，格式为：</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">--name</span> 子容器名称 --volumes-from 父容器名称 image
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>发现容器 son1 和 son2 同样有了 readme.txt 文件，实现了数据共享</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161212693.png" alt="image-20220216121223528" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161212693.png" alt="image-20220216121223528" loading="lazy"></p>
 </li>
 <li>
 <p>删除父容器，并在 son1 容器新增 readmeSon1.txt 文件，观察 son2 容器数据变化</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161227360.png" alt="image-20220216122704204" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161227360.png" alt="image-20220216122704204" loading="lazy"></p>
 <p>使用<code v-pre>--volumes-from</code>参数使多个容器共享数据之后，除非将所有共享数据的容器删除，否则容器之间一直会进行数据同步共享</p>
 </li>
 </ol>
@@ -461,14 +452,14 @@ CMD /bin/bash
 <li>
 <p>利用命令docker login 登录DockerHub，输入用户名、密码</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>Docker login
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161454828.png" alt="image-20220216145414705" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161454828.png" alt="image-20220216145414705" loading="lazy"></p>
 </li>
 <li>
 <p>推送本地的镜像到 DockerHub 上</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> push wyjpro/mytomcat01:1.0
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>注意命令<code v-pre>push</code>后面的名称 <code v-pre>wyjpro</code>必须是你的 Docker Hub 登录用户名，否则推送会失败</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161549402.png" alt="image-20220216154941296" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202161546141.png" alt="image-20220216154634005" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161549402.png" alt="image-20220216154941296" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202161546141.png" alt="image-20220216154634005" loading="lazy"></p>
 </li>
 </ol>
 </div></template>

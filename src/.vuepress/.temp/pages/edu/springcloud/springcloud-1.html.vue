@@ -7,9 +7,9 @@
 </ul>
 <h2 id="springcloud版本选择" tabindex="-1"><a class="header-anchor" href="#springcloud版本选择" aria-hidden="true">#</a> SpringCloud版本选择</h2>
 <p>SpringBoot 项目中使用 SpringCloud 构建分布式系统需要选择相应的版本，参考官方<a href="https://link.segmentfault.com/?enc=V0SKzjRu6g%2FOYj7pUX%2BfkA%3D%3D.DSm8vExh%2BU3CaN0VNjZMsYCcgNABStlqRg%2FxnE5Nfbq8y90Ge5odljsWhSeFGFkhLY4lU112u6XeWtDONwO44Q%3D%3D" target="_blank" rel="noopener noreferrer">SpringCloud和SpringBoot对照版本<ExternalLinkIcon/></a>引入依赖：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220412094713545.png" alt="image-20220412094713545" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220412094713545.png" alt="image-20220412094713545" loading="lazy"></p>
 <p>通过 <a href="https://link.segmentfault.com/?enc=uirbBL%2BNuEOTUuL05ZrY9g%3D%3D.kW9PQ776%2B5v8cCH7aws8eQ5fiC%2F2UifOySBtrpM7n7awraBde39j1H72%2FFLKsyXo" target="_blank" rel="noopener noreferrer">Json方式展示SpringCloud版本对照<ExternalLinkIcon/></a> 关系如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417103332803.png" alt="image-20220417103332803" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417103332803.png" alt="image-20220417103332803" loading="lazy"></p>
 <h2 id="springcloud服务发现" tabindex="-1"><a class="header-anchor" href="#springcloud服务发现" aria-hidden="true">#</a> SpringCloud服务发现</h2>
 <h3 id="nacos概述" tabindex="-1"><a class="header-anchor" href="#nacos概述" aria-hidden="true">#</a> Nacos概述</h3>
 <p><strong>Nacos</strong>是Spring Cloud Alibaba组件，在 SpringCloud 中做<strong>服务注册</strong>中心组件，类似的还有Zookeeper、Consul，同时也是配置中心，比如 SpringCloud 中的 Config，将配置文件版本化管理，学习参考<a href="https://nacos.io/zh-cn/docs/quick-start.html" target="_blank" rel="noopener noreferrer">Nacos官方文档<ExternalLinkIcon/></a></p>
@@ -42,13 +42,13 @@
 <p>JDK17 环境下下载 1.x.x 版本，不会报错，<code v-pre>edu</code>项目中使用 nacos 版本为 1.4.3</p>
 </div>
 <p>启动成功之后进行访问，访问地址：<a href="http://localhost:8848/nacos/index.html#/login" target="_blank" rel="noopener noreferrer">http://localhost:8848/nacos/index.html#/login<ExternalLinkIcon/></a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220411171108793.png" alt="image-20220411171108793" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220411171108793.png" alt="image-20220411171108793" loading="lazy"></p>
 <div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>登陆用户名密码都为 <code v-pre>nacos</code></p>
 </div>
 <p>登陆成功界面如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417112505359.png" alt="image-20220417112505359" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417112505359.png" alt="image-20220417112505359" loading="lazy"></p>
 <p><strong>服务关闭</strong>命令如下：</p>
 <Tabs id="100" :data='[{"title":"windows"},{"title":"Linux/Unix/Mac"}]' :active="1">
 <template #tab0="{ title, value, isActive }">
@@ -141,14 +141,14 @@ spring.cloud.nacos.discovery.server-addr<span class="token operator">=</span><sp
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ol>
 <p>启动服务，登陆Nacos，会发现 <code v-pre>edu-service-edu</code>微服务注册到了 Nacos 中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417161623699.png" alt="image-20220417161623699" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417161623699.png" alt="image-20220417161623699" loading="lazy"></p>
 <h2 id="springcloud服务调用" tabindex="-1"><a class="header-anchor" href="#springcloud服务调用" aria-hidden="true">#</a> SpringCloud服务调用</h2>
 <h3 id="openfeign概述" tabindex="-1"><a class="header-anchor" href="#openfeign概述" aria-hidden="true">#</a> OpenFeign概述</h3>
 <p>Feign 是 Spring Cloud 组件中的一个轻量级 RESTful 的 HTTP  服务客户端，整合了 Ribbon + Hystrix，用来做客户端负载均衡，去<strong>调用服务注册中心的服务</strong></p>
 <p><strong>OpenFeign</strong> 是 Spring Cloud 在 Feign 的基础上支持了 Spring MVC 的注解，如 <code v-pre>@RequesMapping</code> 等，OpenFeign 的<code v-pre>@FeignClient</code> 可以解析 SpringMVC 的 <code v-pre>@RequestMapping</code> 注解下的接口，并通过动态代理的方式产生实现类，<strong>实现类中做负载均衡并调用其他服务</strong></p>
 <h3 id="openfeign使用" tabindex="-1"><a class="header-anchor" href="#openfeign使用" aria-hidden="true">#</a> OpenFeign使用</h3>
 <p>项目中使用 OpenFeign 来调用 Nacos 注册中心中注册的服务，以项目 edu 为例，<code v-pre>edu-service-edu</code> 微服务中的 <code v-pre>VideoController</code> 接口类 <code v-pre>deleteVideo()</code> 调用 <code v-pre>edu-service-vod</code>微服务的 <code v-pre>removeVideo()</code> 方法，（<code v-pre>edu-service-vod</code>微服务已经注册到 Nacos 注册中心，参考<a href="#nacos%E4%BD%BF%E7%94%A8">Nacos使用</a>）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417202722049.png" alt="image-20220417202722049" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417202722049.png" alt="image-20220417202722049" loading="lazy"></p>
 <p><strong>步骤如下</strong>：</p>
 <ol>
 <li>
@@ -181,12 +181,12 @@ spring.cloud.nacos.discovery.server-addr<span class="token operator">=</span><sp
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>注解<code v-pre>@FeignClient</code>标明需要调用的服务端的应用名称，在配置文件中<code v-pre>spring.application.name</code>配置，<code v-pre>@DeleteMapping</code>中定义请求服务的地址，请求<code v-pre>edu-service-vod</code>中接口类<code v-pre>VodController</code>的<code v-pre>removeVideo()</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417204801434.png" alt="image-20220417204801434" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417204801434.png" alt="image-20220417204801434" loading="lazy"></p>
 </div>
 </li>
 </ol>
 <p>配置好之后，便可以在<code v-pre>edu-service-edu</code> 微服务中调用<code v-pre>edu-service-vod</code>中的服务：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417205555567.png" alt="image-20220417205555567" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417205555567.png" alt="image-20220417205555567" loading="lazy"></p>
 <h2 id="springcloud服务熔断与降级" tabindex="-1"><a class="header-anchor" href="#springcloud服务熔断与降级" aria-hidden="true">#</a> SpringCloud服务熔断与降级</h2>
 <h3 id="sentinel概述" tabindex="-1"><a class="header-anchor" href="#sentinel概述" aria-hidden="true">#</a> Sentinel概述</h3>
 <div class="custom-container info">
@@ -221,7 +221,7 @@ spring.cloud.nacos.discovery.server-addr<span class="token operator">=</span><sp
 <p>JDK 17环境下下载 Sentinel 控制台启动运行会出现各种意想不到的错误，建议本地使用 JDK1.8.x 环境，亲测 <code v-pre>Sentinel1.8.3</code> ，<code v-pre>JDK1.8.0</code> 可以正常启动运行 Sentinel 控制台</p>
 </div>
 <p>启动后界面如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418095941537.png" alt="image-20220418095941537" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418095941537.png" alt="image-20220418095941537" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="sentinel限流" tabindex="-1"><a class="header-anchor" href="#sentinel限流" aria-hidden="true">#</a> Sentinel限流</h3>
@@ -252,12 +252,12 @@ spring.cloud.nacos.discovery.server-addr<span class="token operator">=</span><sp
         <span class="token keyword">return</span> <span class="token string">"hello sentinel!"</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418171549853.png" alt="image-20220418171549853" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418171549853.png" alt="image-20220418171549853" loading="lazy"></p>
 </li>
 </ol>
-<p>我们可以看到 Sentinel 控制台监控了服务名为<code v-pre>sentineldemo</code>的服务，点击监控接口<code v-pre>/hello</code>后的流控按钮，为其设置一个简单的限流测试：<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418181128095.png" alt="image-20220418181128095" loading="lazy"></p>
+<p>我们可以看到 Sentinel 控制台监控了服务名为<code v-pre>sentineldemo</code>的服务，点击监控接口<code v-pre>/hello</code>后的流控按钮，为其设置一个简单的限流测试：<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418181128095.png" alt="image-20220418181128095" loading="lazy"></p>
 <p>阀值类型设置为 QPS，单机阈值设置为 1 表示该接口每秒最多允许进入一个请求，测试接口当一秒内发起多于 1 次的请求后，便会出现“Blocked by Sentinel”的提示。</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418194232378.png" alt="image-20220418194136951" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418194232378.png" alt="image-20220418194136951" width="500" />
 <p>代码实现中也可以通过注解<code v-pre>@SentinelResource</code>来自定义限流行为，新增接口代码：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/hello2"</span><span class="token punctuation">)</span>
 <span class="token annotation punctuation">@SentinelResource</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"byResource"</span><span class="token punctuation">,</span>blockHandler <span class="token operator">=</span> <span class="token string">"handleException"</span><span class="token punctuation">)</span>
@@ -271,9 +271,9 @@ spring.cloud.nacos.discovery.server-addr<span class="token operator">=</span><sp
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>1、<code v-pre>value = &quot;byResource&quot;</code>表示按资源名限流，<code v-pre>value = &quot;byUrl&quot;</code>按 URL 限流，之后再在 Sentinel 控制台编辑流控规则</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418195028403.png" alt="image-20220418195028403" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418195028403.png" alt="image-20220418195028403" width="500" />
 <p>2、<code v-pre>blockHandler</code>用于限流处理，限流的请求会转发到<code v-pre>handleException()</code>方法中</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418194531602.png" alt="image-20220418194531602" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418194531602.png" alt="image-20220418194531602" width="500" />
 </div>
 <h3 id="sentinel结合openfeign" tabindex="-1"><a class="header-anchor" href="#sentinel结合openfeign" aria-hidden="true">#</a> Sentinel结合OpenFeign</h3>
 <p>Sentinel 适配了OpenFeign 组件，使用 OpenFeign 来进行服务间调用同时，也可以使用它来进行熔断操作，以<a href="#openfeign%E4%BD%BF%E7%94%A8">OpenFeign使用</a>为例，增加熔断功能，流程如下：</p>

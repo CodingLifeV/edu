@@ -6,12 +6,12 @@ heroImage: /logo.svg
 heroText: 编码人生—CodingLife
 tagline: 以 Java 项目为主线, 记录学习过程中的知识点
 actions:
-  - text: 使用指南 💡
-    link: /base/
+  - text: 快速上手 💡
+    link: /edu/guide/knowledge
     type: primary
 
-  - text: 文档
-    link: /base/
+  - text: 交流学习
+    link: /#交流学习
 
 features:
   - title: edu项目源码
@@ -35,7 +35,7 @@ features:
     link: https://github.com/CodingLifeVV/tiny-demo
 
 copyright: false
-footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> 
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
 # 在线教育网学习教程
@@ -54,10 +54,10 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 | slf4j+log4j2  | 1.7.32+2.17.1 | 日志实现                               |
 | SpringCloud   | 2021.0.1      | 微服务解决方案                         |
 | Redis         |   2.6.4       |  分布式缓存  |
-| Nginx         |          |  静态资源服务器  |
-| OSS           |          |  阿里云对象存储服务  |
-| Lombok        |          |  简化对象封装工具  |
-| Gateway       |     |  服务网关  |
+| Nginx         |  1.21.6        |  静态资源服务器  |
+| OSS           |  3.10.2        |  阿里云对象存储服务  |
+| Lombok        |  1.18.22       |  简化对象封装工具  |
+| Gateway       |  3.1.1   |  服务网关  |
 
 ### 前端技术及工具
 
@@ -75,3 +75,6 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 - 前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank">https://github.com/CodingLifeVV/edu-front</a>
 
 ## 交流学习
+
+- 交流学习 1013801973@qq.com
+- github地址：https://github.com/CodingLifeVV

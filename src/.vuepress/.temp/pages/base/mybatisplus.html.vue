@@ -5,7 +5,7 @@
 </ul>
 <h2 id="mybatis-plus-快速入门" tabindex="-1"><a class="header-anchor" href="#mybatis-plus-快速入门" aria-hidden="true">#</a> Mybatis-Plus 快速入门</h2>
 <p>创建一个简单的 SpringBoot 项目<code v-pre>mybatisplus</code>来读取用户表 User 中的数据，项目工程结构如下：</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241034788.png" alt="image-20220224103427728" width="400" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241034788.png" alt="image-20220224103427728" width="400" />
 <p><strong>项目集成 Mybatis-Plus 步骤如下</strong>：</p>
 <ol>
 <li>
@@ -30,7 +30,7 @@ INSERT INTO user (id, name, age, email) VALUES
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>idea 初始化一个 SpringBoot 工程，SpringBoot 版本 <code v-pre>2.6.3</code>，<code v-pre>groupId</code> 为 <code v-pre>com.codinglife</code>，<code v-pre>artifactId</code> 为 <code v-pre>mybatisplus</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202271618467.png" alt="image-20220227161753347" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202271618467.png" alt="image-20220227161753347" loading="lazy"></p>
 </li>
 <li>
 <p><code v-pre>pom.xml</code> 文件引入项目依赖</p>
@@ -130,7 +130,7 @@ INSERT INTO user (id, name, age, email) VALUES
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>测试结果输出</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241021505.png" alt="image-20220224102059349" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241021505.png" alt="image-20220224102059349" loading="lazy"></p>
 </li>
 </ol>
 <h2 id="mapper-crud-接口" tabindex="-1"><a class="header-anchor" href="#mapper-crud-接口" aria-hidden="true">#</a> Mapper CRUD 接口</h2>
@@ -140,7 +140,7 @@ INSERT INTO user (id, name, age, email) VALUES
 <ol>
 <li>
 <p>对需要插入数据的数据表设置主键自增</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241545480.png" alt="image-20220224154501407" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241545480.png" alt="image-20220224154501407" loading="lazy"></p>
 <p>可以在创建表的时候使用<code v-pre>auto_increment</code> 设置主键自增</p>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">user</span>
 <span class="token punctuation">(</span>
@@ -161,7 +161,7 @@ id <span class="token keyword">BIGINT</span><span class="token punctuation">(</s
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip">
 <p class="custom-container-title">Tips</p>
 <p>MyBatis-Plus 默认的主键策略是 <code v-pre>ID_WORKER</code>（全局唯一策略），如果不使用 <code v-pre>@TableId(type = IdType.AUTO)</code>，会自动生成一个全局唯一的ID：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241616054.png" alt="image-20220224161612967" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241616054.png" alt="image-20220224161612967" loading="lazy"></p>
 </div>
 </li>
 <li>
@@ -175,7 +175,7 @@ id <span class="token keyword">BIGINT</span><span class="token punctuation">(</s
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code v-pre>T</code>为实体对象，插入方法如下：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">int</span> <span class="token function">insert</span><span class="token punctuation">(</span><span class="token class-name">T</span> entity<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202241702732.png" alt="image-20220224170230650" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202241702732.png" alt="image-20220224170230650" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="更新update" tabindex="-1"><a class="header-anchor" href="#更新update" aria-hidden="true">#</a> 更新Update</h3>
@@ -421,7 +421,7 @@ ALTER TABLE `user` ADD COLUMN `updateTime` datetime
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"更新时自动填充 updateTime : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>userMapper<span class="token punctuation">.</span><span class="token function">updateById</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202272056247.png" alt="image-20220225161830034" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202272056247.png" alt="image-20220225161830034" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="逻辑删除" tabindex="-1"><a class="header-anchor" href="#逻辑删除" aria-hidden="true">#</a> 逻辑删除</h3>
@@ -494,8 +494,8 @@ ALTER TABLE `user` ADD COLUMN `updateTime` datetime
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>删除前 <code v-pre>deleted=0</code>，删除后<code v-pre>deleted=1</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281510062.png" alt="image-20220228151039966" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281515262.png" alt="image-20220228151531171" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281510062.png" alt="image-20220228151039966" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281515262.png" alt="image-20220228151531171" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="乐观锁的实现—版本号机制" tabindex="-1"><a class="header-anchor" href="#乐观锁的实现—版本号机制" aria-hidden="true">#</a> 乐观锁的实现—版本号机制</h3>
@@ -564,8 +564,8 @@ ALTER TABLE `user` ADD COLUMN `updateTime` datetime
     <span class="token comment">// 更新 user 表 ID=1 的记录的名字 </span>
     userMapper<span class="token punctuation">.</span><span class="token function">updateById</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> 
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202280935640.png" alt="image-20220228093457486" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202280936285.png" alt="image-20220228093628200" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202280935640.png" alt="image-20220228093457486" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202280936285.png" alt="image-20220228093628200" loading="lazy"></p>
 </li>
 <li>
 <p>修改测试代码，模拟更新数据时，当前版本号和数据库版本号不一致导致数据更新失败</p>
@@ -584,8 +584,8 @@ ALTER TABLE `user` ADD COLUMN `updateTime` datetime
     <span class="token comment">// 当前事务更新数据, 发现 oldVersion 不等于 version</span>
     userMapper<span class="token punctuation">.</span><span class="token function">updateById</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281017590.png" alt="image-20220228101711490" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202202281020341.png" alt="image-20220228102022275" loading="lazy"></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281017590.png" alt="image-20220228101711490" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202202281020341.png" alt="image-20220228102022275" loading="lazy"></p>
 </li>
 </ol>
 <h3 id="分页插件" tabindex="-1"><a class="header-anchor" href="#分页插件" aria-hidden="true">#</a> 分页插件</h3>
@@ -839,8 +839,8 @@ ALTER TABLE `user` ADD COLUMN `updateTime` datetime
 </ol>
 <p>代码执行完成之后便会生成相应代码：</p>
 <p>生成前：</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203022221812.png" width="400">
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203022221812.png" width="400">
 <p>生成后：</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203022222168.png" width="400" /></div></template>
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203022222168.png" width="400" /></div></template>
 
 

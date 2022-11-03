@@ -11,11 +11,11 @@ Spring Cloud 本身并不是一个拿来即可用的框架，它是一套微服�
 
 SpringBoot 项目中使用 SpringCloud 构建分布式系统需要选择相应的版本，参考官方[SpringCloud和SpringBoot对照版本](https://link.segmentfault.com/?enc=V0SKzjRu6g%2FOYj7pUX%2BfkA%3D%3D.DSm8vExh%2BU3CaN0VNjZMsYCcgNABStlqRg%2FxnE5Nfbq8y90Ge5odljsWhSeFGFkhLY4lU112u6XeWtDONwO44Q%3D%3D)引入依赖：
 
-![image-20220412094713545](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220412094713545.png)
+![image-20220412094713545](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220412094713545.png)
 
 通过 [Json方式展示SpringCloud版本对照](https://link.segmentfault.com/?enc=uirbBL%2BNuEOTUuL05ZrY9g%3D%3D.kW9PQ776%2B5v8cCH7aws8eQ5fiC%2F2UifOySBtrpM7n7awraBde39j1H72%2FFLKsyXo) 关系如下：
 
-![image-20220417103332803](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417103332803.png)
+![image-20220417103332803](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417103332803.png)
 
 ## SpringCloud服务发现
 
@@ -77,7 +77,7 @@ JDK17 环境下下载 1.x.x 版本，不会报错，`edu`项目中使用 nacos �
 
 启动成功之后进行访问，访问地址：http://localhost:8848/nacos/index.html#/login
 
-![image-20220411171108793](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220411171108793.png)
+![image-20220411171108793](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220411171108793.png)
 
 ::: tip 
 
@@ -87,7 +87,7 @@ JDK17 环境下下载 1.x.x 版本，不会报错，`edu`项目中使用 nacos �
 
 登陆成功界面如下：
 
-![image-20220417112505359](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417112505359.png)
+![image-20220417112505359](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417112505359.png)
 
 **服务关闭**命令如下：
 
@@ -212,7 +212,7 @@ Nacos 作为注册中心，如果想将一个服务注册到 Nacos 中，以项�
 
 启动服务，登陆Nacos，会发现 `edu-service-edu`微服务注册到了 Nacos 中
 
-![image-20220417161623699](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417161623699.png)
+![image-20220417161623699](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417161623699.png)
 
 ## SpringCloud服务调用
 
@@ -226,7 +226,7 @@ Feign 是 Spring Cloud 组件中的一个轻量级 RESTful 的 HTTP  服务客�
 
 项目中使用 OpenFeign 来调用 Nacos 注册中心中注册的服务，以项目 edu 为例，`edu-service-edu` 微服务中的 `VideoController` 接口类 `deleteVideo()` 调用 `edu-service-vod`微服务的 `removeVideo()` 方法，（`edu-service-vod`微服务已经注册到 Nacos 注册中心，参考[Nacos使用](#nacos使用)）
 
-![image-20220417202722049](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417202722049.png)
+![image-20220417202722049](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417202722049.png)
 
 **步骤如下**：
 
@@ -268,13 +268,13 @@ Feign 是 Spring Cloud 组件中的一个轻量级 RESTful 的 HTTP  服务客�
 
    注解`@FeignClient`标明需要调用的服务端的应用名称，在配置文件中`spring.application.name`配置，`@DeleteMapping`中定义请求服务的地址，请求`edu-service-vod`中接口类`VodController`的`removeVideo()`
 
-   ![image-20220417204801434](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417204801434.png)
+   ![image-20220417204801434](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417204801434.png)
 
    :::
 
 配置好之后，便可以在`edu-service-edu` 微服务中调用`edu-service-vod`中的服务：
 
-![image-20220417205555567](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220417205555567.png)
+![image-20220417205555567](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220417205555567.png)
 
 ## SpringCloud服务熔断与降级
 
@@ -325,7 +325,7 @@ Sentinel 控制台提供一个轻量级的控制台，安装步骤如下：
 
    启动后界面如下：
 
-   ![image-20220418095941537](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418095941537.png)
+   ![image-20220418095941537](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418095941537.png)
 
 ### Sentinel限流
 
@@ -363,13 +363,13 @@ Sentinel 控制台提供一个轻量级的控制台，安装步骤如下：
    }
    ```
 
-   ![image-20220418171549853](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418171549853.png)
+   ![image-20220418171549853](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418171549853.png)
 
-我们可以看到 Sentinel 控制台监控了服务名为`sentineldemo`的服务，点击监控接口`/hello`后的流控按钮，为其设置一个简单的限流测试：![image-20220418181128095](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418181128095.png)
+我们可以看到 Sentinel 控制台监控了服务名为`sentineldemo`的服务，点击监控接口`/hello`后的流控按钮，为其设置一个简单的限流测试：![image-20220418181128095](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418181128095.png)
 
 阀值类型设置为 QPS，单机阈值设置为 1 表示该接口每秒最多允许进入一个请求，测试接口当一秒内发起多于 1 次的请求后，便会出现“Blocked by Sentinel”的提示。
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418194232378.png" alt="image-20220418194136951" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418194232378.png" alt="image-20220418194136951" width="500" />
 
 代码实现中也可以通过注解`@SentinelResource`来自定义限流行为，新增接口代码：
 
@@ -389,11 +389,11 @@ public String handleException(BlockException exception){
 
 1、`value = "byResource"`表示按资源名限流，`value = "byUrl"`按 URL 限流，之后再在 Sentinel 控制台编辑流控规则
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418195028403.png" alt="image-20220418195028403" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418195028403.png" alt="image-20220418195028403" width="500" />
 
 2、`blockHandler`用于限流处理，限流的请求会转发到`handleException()`方法中
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220418194531602.png" alt="image-20220418194531602" width="500" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220418194531602.png" alt="image-20220418194531602" width="500" />
 
 :::
 

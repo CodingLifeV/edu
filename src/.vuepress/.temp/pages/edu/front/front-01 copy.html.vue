@@ -10,7 +10,7 @@
 <ol>
 <li>
 <p>安装 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">vscode下载<ExternalLinkIcon/></a>（用来编写前端代码），安装好之后启动软件<a href="https://segmentfault.com/a/1190000022474382" target="_blank" rel="noopener noreferrer">切换中文界面<ExternalLinkIcon/></a>以及安装 ESlint 插件（代码格式化）</p>
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131321967.png" alt="image-20220313132135817" width="400" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131321967.png" alt="image-20220313132135817" width="400" />
 </li>
 <li>
 <p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">下载安装 Node.js<ExternalLinkIcon/></a>，建议下载 LTS 版本，安装好之后使用命令<code v-pre>node -v</code>查看 Node.js ，使用命令<code v-pre>npm -v</code>查看 npm 版本</p>
@@ -53,7 +53,7 @@ C:<span class="token punctuation">\</span>Users<span class="token punctuation">\
 <p>启动运行</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">npm</span> run dev
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>启动后程序自动运行<a href="http://localhost:9527/" target="_blank" rel="noopener noreferrer">http://localhost:9527/<ExternalLinkIcon/></a> ，登录成功之后界面显示如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131545821.png" alt="image-20220313153843311" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131545821.png" alt="image-20220313153843311" loading="lazy"></p>
 </li>
 </ol>
 <p>一旦我们掌握了 vue-element-admin 的相关开发技巧，便可以使用其中的控件来构建自己项目的相关模块。</p>
@@ -78,13 +78,13 @@ C:<span class="token punctuation">\</span>Users<span class="token punctuation">\
 <p>启动运行</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">npm</span> run dev
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>启动后程序自动运行 <a href="http://localhost:9528/" target="_blank" rel="noopener noreferrer">http://localhost:9528/<ExternalLinkIcon/></a> ：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190819678.png" alt="image-20220319081935558" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190819678.png" alt="image-20220319081935558" loading="lazy"></p>
 <p>登录成功之后界面显示如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203131610978.png" alt="image-20220313161023817" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203131610978.png" alt="image-20220313161023817" loading="lazy"></p>
 </li>
 </ol>
 <p>此时便可以使用该源码来进行二次开发，开发之前我们有必要修改项目根目录 <code v-pre>package.json</code> 文件中关于项目的描述信息：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190818127.png" alt="image-20220319081811968" loading="lazy"></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190818127.png" alt="image-20220319081811968" loading="lazy"></p>
 </div></template>
 
 

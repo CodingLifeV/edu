@@ -2,27 +2,29 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   "/",
-  { text: "基础学习", icon: "tool", link: "/base/" },
+  
+  
   { 
     text: "项目学习", 
     icon: "creative",
     prefix: "/edu/",
     children: [   
       {
-        text: "项目概述",
+        text: "序章",
         icon: "edit",
-        prefix: "util/",
+        prefix: "guide/",
         children:[
-          { text: "功能结构", icon: "edit", link: "" },
-          { text: "数据库描述", icon: "edit", link: "" },
+          { text: "项目架构及功能概述", icon: "", link: "func" },
+          { text: "学习路线", icon: "", link: "knowledge" },
         ],
       },
       {
-        text: "项目入门",
-        icon: "edit",
-        prefix: "util/",
+        text: "后端",
+        icon: "frame",
+        prefix: "backend/",
         children:[
-          { text: "工具篇", icon: "edit", link: "utils" },
+          { text: "技术要点篇", icon: "", link: "key" },
+          { text: "数据库概述", icon: "", link: "sql" },
         ],
       },
       {
@@ -30,8 +32,8 @@ export const enNavbar = navbar([
         icon: "edit",
         prefix: "springcloud/",
         children:[
-          { text: "SpringCloud基础知识", icon: "edit", link: "springcloud-1" },
-          { text: "SpringCloud项目相关", icon: "edit", link: "springcloud-2" },
+          { text: "SpringCloud基础知识", icon: "", link: "springcloud-1" },
+          { text: "SpringCloud项目相关", icon: "", link: "springcloud-2" },
         ],
       },
       {
@@ -39,12 +41,13 @@ export const enNavbar = navbar([
         icon: "edit",
         prefix: "front/",
         children:[
-          { text: "简单介绍", icon: "edit", link: "front-01" },
-          { text: "功能实现", icon: "edit", link: "front-02" },
+          { text: "简单介绍", icon: "", link: "front-01" },
+          { text: "功能实现", icon: "", link: "front-02" },
         ],
       }
     ]
   },
+  { text: "工具篇", icon: "tool", link: "/base/" },
   {
     text: "项目地址",
     icon: "github",
@@ -52,6 +55,32 @@ export const enNavbar = navbar([
       { text: "后端项目", link: "https://github.com/CodingLifeVV/edu" },
       { text: "后端前台项目", link: "https://github.com/CodingLifeVV/edu-admin" },
       { text: "前端项目", link: "https://github.com/CodingLifeVV/edu-front" },
+    ],
+  },
+  {
+    text: "学习资源",
+    icon: "list",
+    children:[
+      { text: "mall学习教程", link: "https://www.macrozheng.com/" },
+      { text: "Road To Coding", link: "https://www.r2coding.com/#/README" },
+      { text: "JavaGuide", link: "https://javaguide.cn/" },
+      { text: "CS-Notes", link: "http://www.cyc2018.xyz/" },
+      { text: "bugstack 虫洞栈", link: "https://bugstack.cn/" },
+      { text: "JavaGuide", link: "https://javaguide.cn/" },
+    ],
+  },
+  {
+    text: "敬请期待",
+    icon: "hot",
+    children:[
+      { text: "MySQL与Redis", link: "#" },
+      { text: "SSM系列", link: "#" },
+      { text: "SpringBoot", link: "#" },
+      { text: "Java并发", link: "#" },
+      { text: "JVM虚拟机", link: "#" },
+      { text: "Spring源码解析", link: "#" },
+      { text: "分布式/微服务", link: "#" },  
+      { text: "面试指南", link: "#" },
     ],
   },
 ]);

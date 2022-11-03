@@ -10,14 +10,15 @@ tag:
 
 navbar: true
 breadcrumb: true
-
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
 ---
 
 ## 登录功能实现
 
 通过浏览器 Web 开发者工具调试会发现，默认登录跳转 URL 显示如下：
 
-![image-20220319082538729](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190825834.png)
+![image-20220319082538729](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190825834.png)
 
 其中，`9528` 为项目默认启动端口号；`/dev-api` 在项目根目录文件`.env.development` 下配置为：
 
@@ -79,11 +80,11 @@ export const constantRoutes = [
 
 2. 在路径`/src/views/`下创建对应的文件夹，一般一个路由对应一个文件
    
-   ![image-20220319085846213](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203190858280.png)
+   ![image-20220319085846213](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203190858280.png)
    
    配置好之后出现如下二级菜单：
    
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203191126502.png" alt="image-20220319112656458" width="252" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203191126502.png" alt="image-20220319112656458" width="252" />
    
    此时，当点击“讲师列表”时，跳转 URL 为 `http://localhost:9528/#/edu/teacher/list`；点击“添加讲师”时，跳转 URL 为 `http://localhost:9528/#/edu/teacher/add`
 
@@ -343,7 +344,7 @@ export const constantRoutes = [
    
    :::
 
-   ![image-20220319190908877](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203191909987.png)
+   ![image-20220319190908877](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203191909987.png)
    
 4. 后端对应 Controller 类使用注解 `@CrossOrigin` 解决跨域问题
    
@@ -441,7 +442,7 @@ export const constantRoutes = [
    
    点击“删除”按钮会触发执行删除方法`removeDataById(id)`，使用 `@click`来绑定事件
    
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201420983.png" alt="image-20220320142008773" width="400" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201420983.png" alt="image-20220320142008773" width="400" />
    
    :::
 
@@ -451,7 +452,7 @@ export const constantRoutes = [
 
 需要实现的功能：当点击“添加教师”时，可以输入需要添加的教师的相关信息，并保存数据到数据库
 
-![image-20220320145246844](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201452912.png)
+![image-20220320145246844](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201452912.png)
 
 :::
 
@@ -619,7 +620,7 @@ export const constantRoutes = [
    
    1、“保存”按钮会触发执行`saveOrUpdate()`方法：
    
-   ![image-20220320172703926](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/202203201727051.png)
+   ![image-20220320172703926](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/202203201727051.png)
    
    2、使用`this.$router.push({ path: '需要跳转的路由' })`的方式进行路由跳转
    
@@ -631,7 +632,7 @@ export const constantRoutes = [
 
 当点击 "教师列表" 中的 "修改" 按钮时，会对教师信息编辑页面，重新编辑该教师信息
 
-<img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409095815109.png" alt="image-20220409095815109" width="200" />
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409095815109.png" alt="image-20220409095815109" width="200" />
 
 :::
 
@@ -662,7 +663,7 @@ export const constantRoutes = [
 
    添加教师与修改教师使用同一个 vue 组件 `form.vue`，可以使用 hid`den: true` 隐藏一个路由界面
 
-   <img src="https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409120300269.png" alt="image-20220409120300269" width="250" />
+   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409120300269.png" alt="image-20220409120300269" width="250" />
 
    :::
 
@@ -706,11 +707,11 @@ export const constantRoutes = [
 
    添加新教师时候，添加界面信息为空，添加界面如下：
 
-   ![image-20220409101223998](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409101223998.png)
+   ![image-20220409101223998](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409101223998.png)
 
    点击修改按钮修改教师信息时，界面会将需要修改的教师的信息回显到修改界面中：
 
-   ![image-20220409101426461](https://cdn.jsdelivr.net/gh/CodingLifeV/images//docs/image-20220409101426461.png)
+   ![image-20220409101426461](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20220409101426461.png)
 
    :::
 

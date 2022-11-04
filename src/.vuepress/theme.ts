@@ -3,7 +3,9 @@ import { enNavbar } from "./navbar/index.js";
 import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  //hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+
+  hostname: "https://www.bmrs.top",
 
   author: {
     name: "Mr.Wyj",

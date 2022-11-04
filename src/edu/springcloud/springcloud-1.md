@@ -1,3 +1,26 @@
+---
+# This is the title of the article
+title: SpringCloud
+# This is the icon of the page
+# icon: page
+# This control sidebar order
+order: 1
+# Set author
+author: Ms.Wyj
+# Set writing time
+date: 2022-11-01
+# A page can have multiple categories
+# this page is sticky in article list
+sticky: true
+# this page will appear in starred articles
+star: true
+# You can customize footer content
+copyright: false
+footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备2022028662号-1</a> | Copyright © 2022-present <a href="https://github.com/CodingLifeVV" target="_blank">CodingLifeVV</a> </p> 内容创作不易，引用请注明出处，网站已备案，切勿侵权
+---
+
+
+
 ## SpringCloud概述
 
 Spring Cloud 是一套完整的微服务解决方案，为开发人员提供了**快速构建分布式系统中一些常见模式的工具**，例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态等，Spring Cloud 是在 SpringBoot 的基础上构建的，是一个**基于 Spring Boot实现的开发工具**。

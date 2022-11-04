@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as t,a as c}from"./app.1a2ec2a7.js";const s={},n=c("p",null,"2222",-1),r=[n];function _(l,a){return o(),t("div",null,r)}const f=e(s,[["render",_],["__file","springcloud-2.html.vue"]]);export{f as default};

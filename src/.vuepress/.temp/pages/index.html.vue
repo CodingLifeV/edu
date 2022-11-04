@@ -1,4 +1,9 @@
-<template><div><h1 id="在线教育网学习教程" tabindex="-1"><a class="header-anchor" href="#在线教育网学习教程" aria-hidden="true">#</a> 在线教育网学习教程</h1>
+<template><div><p style="text-align:center;">
+    <a href="https://github.com/CodingLifeVV/edu-admin/tree/master"><img src="https://img.shields.io/badge/后端前台项目-edu--admin-blue" alt="后端前台项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu"><img src="https://img.shields.io/badge/后端项目-edu-orange" alt="后端项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu-front"><img src="https://img.shields.io/badge/前端项目-edu--front-brightgreen" alt="前端项目"></a>
+</p>
+<h1 id="在线教育网学习教程" tabindex="-1"><a class="header-anchor" href="#在线教育网学习教程" aria-hidden="true">#</a> 在线教育网学习教程</h1>
 <h2 id="项目简介" tabindex="-1"><a class="header-anchor" href="#项目简介" aria-hidden="true">#</a> 项目简介</h2>
 <p>在线教育网源自<a href="https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&amp;vd_source=abf2b3c27024a82e5c3803d588ff8453" target="_blank" rel="noopener noreferrer">谷粒学苑<ExternalLinkIcon/></a>，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。</p>
 <h3 id="后端技术及工具" tabindex="-1"><a class="header-anchor" href="#后端技术及工具" aria-hidden="true">#</a> 后端技术及工具</h3>
@@ -99,11 +104,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="项目地址" tabindex="-1"><a class="header-anchor" href="#项目地址" aria-hidden="true">#</a> 项目地址</h2>
+<h2 id="项目地址及演示" tabindex="-1"><a class="header-anchor" href="#项目地址及演示" aria-hidden="true">#</a> 项目地址及演示</h2>
 <ul>
-<li>后台后端项目：<a href="https://github.com/CodingLifeVV/edu" target="_blank"><a href="https://github.com/CodingLifeVV/edu" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu<ExternalLinkIcon/></a></a></li>
-<li>后台前端项目：<a href="https://github.com/CodingLifeVV/edu-admin" target="_blank"><a href="https://github.com/CodingLifeVV/edu-admin" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-admin<ExternalLinkIcon/></a></a></li>
-<li>前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank"><a href="https://github.com/CodingLifeVV/edu-front" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-front<ExternalLinkIcon/></a></a></li>
+<li>
+<p>后台后端项目：<a href="https://github.com/CodingLifeVV/edu" target="_blank"><a href="https://github.com/CodingLifeVV/edu" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu<ExternalLinkIcon/></a></a></p>
+<p>后台代码模块截图：</p>
+<img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20221104174015695.png" alt="image-20221104174015695" style="zoom:60%;" />
+</li>
+<li>
+<p>后台前端项目：<a href="https://github.com/CodingLifeVV/edu-admin" target="_blank"><a href="https://github.com/CodingLifeVV/edu-admin" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-admin<ExternalLinkIcon/></a></a></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022 17-27-55.gif" alt="后台后端项目" loading="lazy"></p>
+</li>
+<li>
+<p>前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank"><a href="https://github.com/CodingLifeVV/edu-front" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-front<ExternalLinkIcon/></a></a></p>
+<p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022 17-35-35.gif" alt="Nov-04-2022 17-35-35" loading="lazy"></p>
+</li>
 </ul>
 <h2 id="交流学习" tabindex="-1"><a class="header-anchor" href="#交流学习" aria-hidden="true">#</a> 交流学习</h2>
 <ul>

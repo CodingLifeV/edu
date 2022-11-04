@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/edu/sitemap.xml
+Sitemap: https://www.bmrs.top/edu/sitemap.xml

@@ -4,13 +4,13 @@ icon: home
 title: 项目主页
 heroImage: /logo.svg
 heroText: 编码人生—CodingLife
-tagline: 以 Java 项目为主线, 记录学习过程中的知识点
+tagline: 在线教育网分为前台用户系统和后台管理系统，使用现阶段主流技术实现。后端java版本为JDK17，涵盖了SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。
 actions:
   - text: 快速上手 💡
     link: /edu/guide/knowledge
     type: primary
 
-  - text: 交流学习
+  - text: 交流学习 📥
     link: /#交流学习
 
 features:

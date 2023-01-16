@@ -108,21 +108,26 @@
 <ul>
 <li>
 <p>后台后端项目：<a href="https://github.com/CodingLifeVV/edu" target="_blank"><a href="https://github.com/CodingLifeVV/edu" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu<ExternalLinkIcon/></a></a></p>
-<p>后台代码模块截图：</p>
+<details class="custom-container details"><summary>模型模块截图</summary>
 <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20221104174015695.png" alt="image-20221104174015695" style="zoom:60%;" />
+</details>
 </li>
 <li>
 <p>后台前端项目：<a href="https://github.com/CodingLifeVV/edu-admin" target="_blank"><a href="https://github.com/CodingLifeVV/edu-admin" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-admin<ExternalLinkIcon/></a></a></p>
+<details class="custom-container details"><summary>项目演示</summary>
 <p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022 17-27-55.gif" alt="后台后端项目" loading="lazy"></p>
+</details>
 </li>
 <li>
 <p>前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank"><a href="https://github.com/CodingLifeVV/edu-front" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV/edu-front<ExternalLinkIcon/></a></a></p>
+<details class="custom-container details"><summary>项目演示</summary>
 <p><img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022 17-35-35.gif" alt="Nov-04-2022 17-35-35" loading="lazy"></p>
+</details>
 </li>
 </ul>
 <h2 id="交流学习" tabindex="-1"><a class="header-anchor" href="#交流学习" aria-hidden="true">#</a> 交流学习</h2>
 <ul>
-<li>交流学习 <a href="mailto:1013801973@qq.com">1013801973@qq.com</a></li>
+<li>交流学习 <a href="mailto:wyj_program@163.com">wyj_program@163.com</a></li>
 <li>github地址：<a href="https://github.com/CodingLifeVV" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV<ExternalLinkIcon/></a></li>
 </ul>
 </div></template>

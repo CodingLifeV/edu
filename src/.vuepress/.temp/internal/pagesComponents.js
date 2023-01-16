@@ -13,6 +13,26 @@ export const pagesComponents = {
   "v-3c10a4de": defineAsyncComponent(() => import(/* webpackChunkName: "v-3c10a4de" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/base/github.html.vue")),
   // path: /base/mybatisplus.html
   "v-69817531": defineAsyncComponent(() => import(/* webpackChunkName: "v-69817531" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/base/mybatisplus.html.vue")),
+  // path: /springboot/
+  "v-07b008f7": defineAsyncComponent(() => import(/* webpackChunkName: "v-07b008f7" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/index.html.vue")),
+  // path: /springboot/springboot1.html
+  "v-34fa457e": defineAsyncComponent(() => import(/* webpackChunkName: "v-34fa457e" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot1.html.vue")),
+  // path: /springboot/springboot2.html
+  "v-36af1e1d": defineAsyncComponent(() => import(/* webpackChunkName: "v-36af1e1d" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot2.html.vue")),
+  // path: /springboot/springboot3.html
+  "v-3863f6bc": defineAsyncComponent(() => import(/* webpackChunkName: "v-3863f6bc" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot3.html.vue")),
+  // path: /springboot/springboot4.html
+  "v-3a18cf5b": defineAsyncComponent(() => import(/* webpackChunkName: "v-3a18cf5b" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot4.html.vue")),
+  // path: /springboot/springboot5.html
+  "v-3bcda7fa": defineAsyncComponent(() => import(/* webpackChunkName: "v-3bcda7fa" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot5.html.vue")),
+  // path: /springboot/springboot6.html
+  "v-3d828099": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d828099" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot6.html.vue")),
+  // path: /springboot/springboot7.html
+  "v-3f375938": defineAsyncComponent(() => import(/* webpackChunkName: "v-3f375938" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot7.html.vue")),
+  // path: /springboot/springboot8.html
+  "v-40ec31d7": defineAsyncComponent(() => import(/* webpackChunkName: "v-40ec31d7" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot8.html.vue")),
+  // path: /springboot/springboot9.html
+  "v-42a10a76": defineAsyncComponent(() => import(/* webpackChunkName: "v-42a10a76" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot9.html.vue")),
   // path: /edu/backend/
   "v-9a7d9066": defineAsyncComponent(() => import(/* webpackChunkName: "v-9a7d9066" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/backend/index.html.vue")),
   // path: /edu/backend/key.html

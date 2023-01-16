@@ -2,8 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   "/",
-  
-  
   { 
     text: "项目学习", 
     icon: "creative",
@@ -48,6 +46,22 @@ export const enNavbar = navbar([
     ]
   },
   { text: "工具篇", icon: "tool", link: "/base/" },
+  { 
+    text: "SpringBoot系列", 
+    icon: "launch",
+    prefix: "/springboot/",
+    children: [   
+      { text: "SpringBoot基础", icon: "", link: "springboot1" },
+      { text: "SpringBoot Web开发", icon: "", link: "springboot2" },
+      { text: "SpringBoot员工管理系统", icon: "", link: "springboot3" },
+      { text: "SpringBoot整合数据库", icon: "", link: "springboot4" },
+      { text: "SpringBoot整合SpringSecurity", icon: "", link: "springboot5" },
+      { text: "SpringBoot整合Shiro", icon: "", link: "springboot6" },
+      { text: "SpringBoot整合Swagger", icon: "", link: "springboot7" },
+      { text: "SpringBoot简单任务实现", icon: "", link: "springboot8" },
+      { text: "SpringBoot与分布式入门", icon: "", link: "springboot9" },
+    ]
+  },
   {
     text: "项目地址",
     icon: "github",
@@ -75,7 +89,7 @@ export const enNavbar = navbar([
     children:[
       { text: "MySQL与Redis", link: "#" },
       { text: "SSM系列", link: "#" },
-      { text: "SpringBoot", link: "#" },
+      
       { text: "Java并发", link: "#" },
       { text: "JVM虚拟机", link: "#" },
       { text: "Spring源码解析", link: "#" },

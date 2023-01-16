@@ -15,23 +15,28 @@ actions:
 
 features:
   - title: edu项目源码
-    icon: slides
+    icon: layout
     details: 在线教育网后端代码，基于SpringBoot、SpringClound
     link: https://github.com/CodingLifeVV/edu
 
   - title: edu-admin项目源码
-    icon: slides
+    icon: layout
     details: 在线教育网后端前端源码，基于vue开发，使用vue-admin-template模版
     link: https://github.com/CodingLifeVV/edu-admin
 
   - title: edu-front项目源码
-    icon: slides
+    icon: layout
     details: 在线教育网后端前端
     link: https://github.com/CodingLifeVV/edu-front
 
   - title: tiny-demo项目源码
     icon: layout
-    details: 文档中的一些小demo都在这里
+    details: edu项目知识点拆分后的一些小demo都在这里
+    link: https://github.com/CodingLifeVV/springboot-demo
+
+  - title: SpringBoot实战项目源码
+    icon: layout
+    details: SpringBoot系列项目源码
     link: https://github.com/CodingLifeVV/tiny-demo
 
 copyright: false
@@ -80,19 +85,21 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 ## 项目地址及演示
 - 后台后端项目：<a href="https://github.com/CodingLifeVV/edu" target="_blank">https://github.com/CodingLifeVV/edu</a>
 
-  后台代码模块截图：
-
+  :::: details 模型模块截图
   <img src="https://eduimage1.oss-cn-beijing.aliyuncs.com/img/image-20221104174015695.png" alt="image-20221104174015695" style="zoom:60%;" />
+  ::::
 
 - 后台前端项目：<a href="https://github.com/CodingLifeVV/edu-admin" target="_blank">https://github.com/CodingLifeVV/edu-admin</a>
 
+  :::: details 项目演示
   ![后台后端项目](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022%2017-27-55.gif)
+  ::::
 
 - 前台项目：<a href="https://github.com/CodingLifeVV/edu-front" target="_blank">https://github.com/CodingLifeVV/edu-front</a>
 
+  :::: details 项目演示
   ![Nov-04-2022 17-35-35](https://eduimage1.oss-cn-beijing.aliyuncs.com/img/Nov-04-2022%2017-35-35.gif)
-
-
+  ::::
 
 
 
@@ -108,5 +115,10 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 
 ## 交流学习
 
-- 交流学习 1013801973@qq.com
+- 交流学习 wyj_program@163.com
 - github地址：https://github.com/CodingLifeVV
+
+
+
+
+

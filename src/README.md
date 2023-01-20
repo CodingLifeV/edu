@@ -4,7 +4,7 @@ icon: home
 title: 项目主页
 heroImage: /logo.svg
 heroText: 编码人生—CodingLife
-tagline: 在线教育网分为前台用户系统和后台管理系统，使用现阶段主流技术实现。后端java版本为JDK17，涵盖了SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。
+tagline: 网站旨在分享学习过程中记录的一些笔记。目前包括三个大的模块：(1)在线教育网(2)SpringBoot系列(3)Java面试指南
 actions:
   - text: 快速上手 💡
     link: /edu/guide/knowledge
@@ -44,17 +44,22 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 ---
 
 <p style="text-align:center;">
-    <a href="https://github.com/CodingLifeVV/edu-admin/tree/master"><img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF%E5%89%8D%E5%8F%B0%E9%A1%B9%E7%9B%AE-edu--admin-blue" alt="后端前台项目"></a>
-    <a href="https://github.com/CodingLifeVV/edu"><img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE-edu-orange" alt="后端项目"></a>
-    <a href="https://github.com/CodingLifeVV/edu-front"><img src="https://img.shields.io/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-edu--front-brightgreen" alt="前端项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu-admin/tree/master"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%BD%91%E5%90%8E%E7%AB%AF%E5%89%8D%E5%8F%B0%E9%A1%B9%E7%9B%AE-edu--admin-blue" alt="在线教育网后端前台项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%BD%91%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE-edu-orange" alt="在线教育网后端项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu-front"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%BD%91%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-edu--front-brightgreen" alt="在线教育网前端项目"></a>
+    <a href="https://github.com/CodingLifeVV/springboot-demo"><img src="https://img.shields.io/badge/SpringBoot%E7%B3%BB%E5%88%97%E6%BA%90%E7%A0%81-springboot--demo-important" alt="SpringBoot系列"></a>
 </p>
 
+
+# 项目简介
+
+| 模块           | 简介                                                         |
+| -------------- | :----------------------------------------------------------- |
+| 在线教育网     | 在线教育网源自[谷粒学苑](https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&vd_source=abf2b3c27024a82e5c3803d588ff8453)，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。 |
+| SpringBoot系列 | 该系列开发了一个基于SpringBoot的员工管理系统，并整合了数据库Redis、SpringSecurity、Shiro、Swagger等技术 |
+| Java面试指南   | 该系列整理了面试Java面试过程中常被问到的知识点，包括JavaSE、JavaEE、多线程、数据库、JVM虚拟机、计算机网络等知识 |
+
 # 在线教育网学习教程
-
-
-## 项目简介
-
-在线教育网源自[谷粒学苑](https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&vd_source=abf2b3c27024a82e5c3803d588ff8453)，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。
 
 ### 后端技术及工具
 
@@ -103,20 +108,11 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## 交流学习
 
 - 交流学习 wyj_program@163.com
 - github地址：https://github.com/CodingLifeVV
+- 提供Java编程辅导｜学习路线规划｜个人网站搭建｜毕设指导｜作用辅导
 
 
 

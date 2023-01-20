@@ -62,13 +62,33 @@ export const enNavbar = navbar([
       { text: "SpringBoot与分布式入门", icon: "", link: "springboot9" },
     ]
   },
+
+  { 
+    text: "Java面试指南", 
+    icon: "launch",
+    prefix: "/interview/",
+    children: [   
+      { text: "Java基础", icon: "", link: "javaSE" },
+      { text: "Java框架-SSM", icon: "", link: "javaEE" },
+      { text: "数据库", icon: "", link: "database" },
+      { text: "计算机网络", icon: "", link: "networks" },
+      { text: "Redis", icon: "", link: "redis" },
+      { text: "多线程", icon: "", link: "concurrent" },
+      { text: "设计模式", icon: "", link: "designpattern" },
+      { text: "Java虚拟机", icon: "", link: "Jvm" },
+    ]
+  },
+
+
   {
     text: "项目地址",
     icon: "github",
     children:[
-      { text: "后端项目", link: "https://github.com/CodingLifeVV/edu" },
-      { text: "后端前台项目", link: "https://github.com/CodingLifeVV/edu-admin" },
-      { text: "前端项目", link: "https://github.com/CodingLifeVV/edu-front" },
+      { text: "在线教育网后端项目", link: "https://github.com/CodingLifeVV/edu" },
+      { text: "在线教育网后端前台项目", link: "https://github.com/CodingLifeVV/edu-admin" },
+      { text: "在线教育网前端项目", link: "https://github.com/CodingLifeVV/edu-front" },
+      { text: "SpringBoot系列", link: "https://github.com/CodingLifeVV/springboot-demo" },
+      
     ],
   },
   {
@@ -89,7 +109,6 @@ export const enNavbar = navbar([
     children:[
       { text: "MySQL与Redis", link: "#" },
       { text: "SSM系列", link: "#" },
-      
       { text: "Java并发", link: "#" },
       { text: "JVM虚拟机", link: "#" },
       { text: "Spring源码解析", link: "#" },

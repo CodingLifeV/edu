@@ -1,11 +1,33 @@
 <template><div><p style="text-align:center;">
-    <a href="https://github.com/CodingLifeVV/edu-admin/tree/master"><img src="https://img.shields.io/badge/后端前台项目-edu--admin-blue" alt="后端前台项目"></a>
-    <a href="https://github.com/CodingLifeVV/edu"><img src="https://img.shields.io/badge/后端项目-edu-orange" alt="后端项目"></a>
-    <a href="https://github.com/CodingLifeVV/edu-front"><img src="https://img.shields.io/badge/前端项目-edu--front-brightgreen" alt="前端项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu-admin/tree/master"><img src="https://img.shields.io/badge/在线教育网后端前台项目-edu--admin-blue" alt="在线教育网后端前台项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu"><img src="https://img.shields.io/badge/在线教育网后端项目-edu-orange" alt="在线教育网后端项目"></a>
+    <a href="https://github.com/CodingLifeVV/edu-front"><img src="https://img.shields.io/badge/在线教育网前端项目-edu--front-brightgreen" alt="在线教育网前端项目"></a>
+    <a href="https://github.com/CodingLifeVV/springboot-demo"><img src="https://img.shields.io/badge/SpringBoot系列源码-springboot--demo-important" alt="SpringBoot系列"></a>
 </p>
+<h1 id="项目简介" tabindex="-1"><a class="header-anchor" href="#项目简介" aria-hidden="true">#</a> 项目简介</h1>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th style="text-align:left">简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>在线教育网</td>
+<td style="text-align:left">在线教育网源自<a href="https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&amp;vd_source=abf2b3c27024a82e5c3803d588ff8453" target="_blank" rel="noopener noreferrer">谷粒学苑<ExternalLinkIcon/></a>，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。</td>
+</tr>
+<tr>
+<td>SpringBoot系列</td>
+<td style="text-align:left">该系列开发了一个基于SpringBoot的员工管理系统，并整合了数据库Redis、SpringSecurity、Shiro、Swagger等技术</td>
+</tr>
+<tr>
+<td>Java面试指南</td>
+<td style="text-align:left">该系列整理了面试Java面试过程中常被问到的知识点，包括JavaSE、JavaEE、多线程、数据库、JVM虚拟机、计算机网络等知识</td>
+</tr>
+</tbody>
+</table>
 <h1 id="在线教育网学习教程" tabindex="-1"><a class="header-anchor" href="#在线教育网学习教程" aria-hidden="true">#</a> 在线教育网学习教程</h1>
-<h2 id="项目简介" tabindex="-1"><a class="header-anchor" href="#项目简介" aria-hidden="true">#</a> 项目简介</h2>
-<p>在线教育网源自<a href="https://www.bilibili.com/video/BV1dQ4y1A75e/?spm_id_from=333.999.0.0&amp;vd_source=abf2b3c27024a82e5c3803d588ff8453" target="_blank" rel="noopener noreferrer">谷粒学苑<ExternalLinkIcon/></a>，分为前台用户系统和后台管理系统，使用现阶段主流技术实现，并对其中的部分技术进行了更新。后端 java 版本为 JDK17，涵盖了 SpringBoot、SpringCloud、Mybatis-Plus、Redis等技术。</p>
 <h3 id="后端技术及工具" tabindex="-1"><a class="header-anchor" href="#后端技术及工具" aria-hidden="true">#</a> 后端技术及工具</h3>
 <table>
 <thead>
@@ -129,6 +151,7 @@
 <ul>
 <li>交流学习 <a href="mailto:wyj_program@163.com">wyj_program@163.com</a></li>
 <li>github地址：<a href="https://github.com/CodingLifeVV" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV<ExternalLinkIcon/></a></li>
+<li>提供Java编程辅导｜学习路线规划｜个人网站搭建｜毕设指导｜作用辅导</li>
 </ul>
 </div></template>
 

@@ -73,6 +73,21 @@ export const enSidebar = sidebar({
         { text: "SpringBoot与分布式入门", icon: "", link: "springboot9" },
       ]
     },
-    
+    { 
+      text: "Java面试指南", 
+      icon: "note",
+      prefix: "/interview/",
+      collapsable: true,
+      children: [   
+        { text: "Java基础", icon: "", link: "javaSE" },
+        { text: "Java框架-SSM", icon: "", link: "javaEE" },
+        { text: "数据库", icon: "", link: "database" },
+        { text: "计算机网络", icon: "", link: "networks" },
+        { text: "Redis", icon: "", link: "redis" },
+        { text: "多线程", icon: "", link: "concurrent" },
+        { text: "设计模式", icon: "", link: "designpattern" },
+        { text: "Java虚拟机", icon: "", link: "Jvm" },
+      ]
+    },
   ],
 });

@@ -13,6 +13,24 @@ export const pagesComponents = {
   "v-3c10a4de": defineAsyncComponent(() => import(/* webpackChunkName: "v-3c10a4de" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/base/github.html.vue")),
   // path: /base/mybatisplus.html
   "v-69817531": defineAsyncComponent(() => import(/* webpackChunkName: "v-69817531" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/base/mybatisplus.html.vue")),
+  // path: /interview/Jvm.html
+  "v-2fa80702": defineAsyncComponent(() => import(/* webpackChunkName: "v-2fa80702" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/Jvm.html.vue")),
+  // path: /interview/
+  "v-71b3ae87": defineAsyncComponent(() => import(/* webpackChunkName: "v-71b3ae87" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/index.html.vue")),
+  // path: /interview/concurrent.html
+  "v-2acde81b": defineAsyncComponent(() => import(/* webpackChunkName: "v-2acde81b" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/concurrent.html.vue")),
+  // path: /interview/database.html
+  "v-9bb96dd2": defineAsyncComponent(() => import(/* webpackChunkName: "v-9bb96dd2" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/database.html.vue")),
+  // path: /interview/designpattern.html
+  "v-307c4264": defineAsyncComponent(() => import(/* webpackChunkName: "v-307c4264" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/designpattern.html.vue")),
+  // path: /interview/javaEE.html
+  "v-026a6ef0": defineAsyncComponent(() => import(/* webpackChunkName: "v-026a6ef0" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/javaEE.html.vue")),
+  // path: /interview/javaSE.html
+  "v-31fca704": defineAsyncComponent(() => import(/* webpackChunkName: "v-31fca704" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/javaSE.html.vue")),
+  // path: /interview/networks.html
+  "v-03111666": defineAsyncComponent(() => import(/* webpackChunkName: "v-03111666" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/networks.html.vue")),
+  // path: /interview/redis.html
+  "v-791b0205": defineAsyncComponent(() => import(/* webpackChunkName: "v-791b0205" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/interview/redis.html.vue")),
   // path: /springboot/
   "v-07b008f7": defineAsyncComponent(() => import(/* webpackChunkName: "v-07b008f7" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/index.html.vue")),
   // path: /springboot/springboot1.html

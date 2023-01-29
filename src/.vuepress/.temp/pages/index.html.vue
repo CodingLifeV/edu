@@ -151,6 +151,7 @@
 <ul>
 <li>交流学习 <a href="mailto:wyj_program@163.com">wyj_program@163.com</a></li>
 <li>github地址：<a href="https://github.com/CodingLifeVV" target="_blank" rel="noopener noreferrer">https://github.com/CodingLifeVV<ExternalLinkIcon/></a></li>
+<li>小红书不定期发布编程相关知识，账号：9414507097</li>
 <li>提供Java编程辅导｜学习路线规划｜个人网站搭建｜毕设指导｜作用辅导</li>
 </ul>
 </div></template>

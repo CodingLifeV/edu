@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: /logo.svg
+heroImage: /logo.png
 heroText: 编码人生—CodingLife
 tagline: 网站旨在分享学习过程中记录的一些笔记。目前包括三个大的模块：(1)在线教育网(2)SpringBoot系列(3)Java面试指南
 actions:
@@ -112,7 +112,9 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 
 - 交流学习 wyj_program@163.com
 - github地址：https://github.com/CodingLifeVV
+- 小红书不定期发布编程相关知识，账号：9414507097
 - 提供Java编程辅导｜学习路线规划｜个人网站搭建｜毕设指导｜作用辅导
+
 
 
 

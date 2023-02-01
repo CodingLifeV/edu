@@ -8,6 +8,7 @@
 <li><RouterLink to="/interview/concurrent.html">多线程</RouterLink></li>
 <li><RouterLink to="/interview/designpattern.html">设计模式</RouterLink></li>
 <li><RouterLink to="/interview/Jvm.html">Java虚拟机</RouterLink></li>
+<li><RouterLink to="/interview/programs.html">剑指Offer算法</RouterLink></li>
 </ul>
 </div></template>
 

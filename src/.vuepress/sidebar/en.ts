@@ -87,6 +87,7 @@ export const enSidebar = sidebar({
         { text: "多线程", icon: "", link: "concurrent" },
         { text: "设计模式", icon: "", link: "designpattern" },
         { text: "Java虚拟机", icon: "", link: "Jvm" },
+        { text: "剑指Offer算法", icon: "", link: "programs" },
       ]
     },
   ],

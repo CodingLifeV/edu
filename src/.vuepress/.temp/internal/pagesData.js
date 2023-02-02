@@ -51,12 +51,6 @@ export const pagesData = {
   "v-40ec31d7": () => import(/* webpackChunkName: "v-40ec31d7" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot8.html.js").then(({ data }) => data),
   // path: /springboot/springboot9.html
   "v-42a10a76": () => import(/* webpackChunkName: "v-42a10a76" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/springboot/springboot9.html.js").then(({ data }) => data),
-  // path: /edu/guide/
-  "v-025ed4e5": () => import(/* webpackChunkName: "v-025ed4e5" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/index.html.js").then(({ data }) => data),
-  // path: /edu/guide/func.html
-  "v-12861550": () => import(/* webpackChunkName: "v-12861550" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/func.html.js").then(({ data }) => data),
-  // path: /edu/guide/knowledge.html
-  "v-251d5740": () => import(/* webpackChunkName: "v-251d5740" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/knowledge.html.js").then(({ data }) => data),
   // path: /edu/backend/
   "v-9a7d9066": () => import(/* webpackChunkName: "v-9a7d9066" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/backend/index.html.js").then(({ data }) => data),
   // path: /edu/backend/key.html
@@ -67,6 +61,12 @@ export const pagesData = {
   "v-efed1908": () => import(/* webpackChunkName: "v-efed1908" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/front/front-01.html.js").then(({ data }) => data),
   // path: /edu/front/front-02.html
   "v-ec8367ca": () => import(/* webpackChunkName: "v-ec8367ca" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/front/front-02.html.js").then(({ data }) => data),
+  // path: /edu/guide/
+  "v-025ed4e5": () => import(/* webpackChunkName: "v-025ed4e5" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/index.html.js").then(({ data }) => data),
+  // path: /edu/guide/func.html
+  "v-12861550": () => import(/* webpackChunkName: "v-12861550" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/func.html.js").then(({ data }) => data),
+  // path: /edu/guide/knowledge.html
+  "v-251d5740": () => import(/* webpackChunkName: "v-251d5740" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/guide/knowledge.html.js").then(({ data }) => data),
   // path: /edu/springcloud/springcloud-1.html
   "v-00d17fc6": () => import(/* webpackChunkName: "v-00d17fc6" */"/Users/wyj/Desktop/edu-all/edudocs/docs/src/.vuepress/.temp/pages/edu/springcloud/springcloud-1.html.js").then(({ data }) => data),
   // path: /edu/springcloud/springcloud-2.html

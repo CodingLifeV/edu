@@ -110,10 +110,8 @@ footer: MIT Licensed  <a href="https://beian.miit.gov.cn/#/Integrated/index" tar
 
 ## 交流学习
 
-- 交流学习 wyj_program@163.com
+- 交流学习 1013801973@qq.com
 - github地址：https://github.com/CodingLifeVV
-- 小红书不定期发布编程相关知识，账号：9414507097
-- 提供Java编程辅导｜学习路线规划｜个人网站搭建｜毕设指导｜作用辅导
 
 
 

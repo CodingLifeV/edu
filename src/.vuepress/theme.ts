@@ -46,7 +46,7 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
-      "/": ["bmrs1234"],
+      //"/": ["bmrs1234"],
     },
   },
 

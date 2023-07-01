@@ -30,10 +30,10 @@ export const pagesRoutes = [
   ["v-e199e2d0","/edu/backend/sql.html",{"t":"数据库概述"},["/edu/backend/sql","/edu/backend/sql.md"]],
   ["v-efed1908","/edu/front/front-01.html",{"t":"快速入门","i":"config"},["/edu/front/front-01","/edu/front/front-01.md"]],
   ["v-ec8367ca","/edu/front/front-02.html",{"t":"快速入门","i":"config"},["/edu/front/front-02","/edu/front/front-02.md"]],
+  ["v-00d17fc6","/edu/springcloud/springcloud-1.html",{"t":"SpringCloud"},["/edu/springcloud/springcloud-1","/edu/springcloud/springcloud-1.md"]],
+  ["v-02865865","/edu/springcloud/springcloud-2.html",{"t":"SpringCloud"},["/edu/springcloud/springcloud-2","/edu/springcloud/springcloud-2.md"]],
   ["v-025ed4e5","/edu/guide/",{"t":"学习指南"},["/edu/guide/index.html","/edu/guide/README.md"]],
   ["v-12861550","/edu/guide/func.html",{"t":"项目架构及功能概述"},["/edu/guide/func","/edu/guide/func.md"]],
   ["v-251d5740","/edu/guide/knowledge.html",{"t":"学习路线"},["/edu/guide/knowledge","/edu/guide/knowledge.md"]],
-  ["v-00d17fc6","/edu/springcloud/springcloud-1.html",{"t":"SpringCloud"},["/edu/springcloud/springcloud-1","/edu/springcloud/springcloud-1.md"]],
-  ["v-02865865","/edu/springcloud/springcloud-2.html",{"t":"SpringCloud"},["/edu/springcloud/springcloud-2","/edu/springcloud/springcloud-2.md"]],
   ["v-3706649a","/404.html",{"t":""},["/404"]],
 ]

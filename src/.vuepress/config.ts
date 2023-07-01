@@ -18,7 +18,7 @@ export default defineUserConfig({
   // google 广告
   head: [
     // 其他的 <head> 配置项
-    ["script", { src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6877368480585509", crossorigin: "anonymous", async: "true" }],
+    ["script", { src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-6877368480585509", crossorigin: "anonymous", async: "true" }],
   ],
 
   shouldPrefetch: false,
